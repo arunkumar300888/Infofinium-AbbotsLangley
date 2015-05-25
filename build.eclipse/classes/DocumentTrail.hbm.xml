@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="DocumentTrail" table="document_trail">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<many-to-one name="document" class="uk.co.jmr.sdp.domain.Document"
+			column="doc_id" lazy="false" not-null="true" />
+		<many-to-one name="user" class="uk.co.jmr.sdp.domain.User"
+			column="user_id" lazy="false" not-null="true" />
+		<property name="action" column="action" />
+		<property name="date" column="trail_date" />
+		<property name="taskName" column="taskname"></property>
+	
+	</class>
+</hibernate-mapping>

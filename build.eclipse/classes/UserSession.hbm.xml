@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+
+
+	<class name="UserSession" table="user_session" >
+
+		<id name="id" column="userid">
+			<generator class="assigned"></generator>
+
+		</id>
+
+		<property name="sessionid" column="sessionid" type="string"></property>
+		<property name="ipaddress" column="ipaddress" type="string"></property>
+		<property name="browser" column="browser" type="string"></property>
+		<property name="deviceos" column="deviceos" type="string"></property>
+		<property name="version" column="version" type="string"></property>
+
+
+
+
+	</class>
+
+
+
+
+
+
+
+
+
+
+</hibernate-mapping>

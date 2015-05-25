@@ -1,0 +1,174 @@
+
+<script type="text/javascript">
+//<![CDATA[
+	
+     $(function(){
+		$("#FORM_ButtonBar").hide();
+	});        
+           
+	var formTabs2 =
+	[
+		{vmask:[0],
+		rmask:[0],
+		fields:[ 													 
+			{name:"f_22_1",     id:"f_22_1",    type: 'S',  isRequired: true, ownedBy: null},
+			{name:"f_22_2",     id:"f_22_2",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_22_3",     id:"f_22_3",    type: '',  isRequired: true, ownedBy: null},
+			{name:"f_22_4",     id:"f_22_4",    type: '',  isRequired: true, ownedBy: null},
+			{name:"f_22_5",     id:"f_22_5",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_22_6",     id:"f_22_6",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_22_7",     id:"f_22_7",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_22_8",     id:"f_22_8",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_22_9",     id:"f_22_9",	  type: '',  isRequired: true,  ownedBy: null}, 
+			{name:"f_22_10",    id:"f_22_10",   type: '',  isRequired: true, ownedBy: null},			
+		    {name:"f_22_11",     id:"f_22_11",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_12",     id:"f_22_12",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_13",     id:"f_22_13",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_14",     id:"f_22_14",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_15",     id:"f_22_15",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_16",     id:"f_22_16",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_17",     id:"f_22_17",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_18",     id:"f_22_18",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_19",     id:"f_22_19",   type: 'S',  isRequired: false, ownedBy: null},
+		    {name:"f_22_20",     id:"f_22_20",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_21",     id:"f_22_21",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_22",     id:"f_22_22",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_23",     id:"f_22_23",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_24",     id:"f_22_24",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_25",     id:"f_22_25",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_26",     id:"f_22_26",   type: 'T',  isRequired: false, ownedBy: null},
+		    {name:"f_22_27",     id:"f_22_27",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_28",     id:"f_22_28",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_22_29",     id:"f_22_29",   type: 'T',  isRequired: false, ownedBy: null}]}
+				
+	];
+
+	  function _formValidationCheck()
+		{
+			var rv = true;
+			var fFrom = document.getElementById("f_22_6");
+			var from = fFrom.value;
+			from = trim(from);
+			if(from != null)
+			{
+				markFieldLabelValid(fFrom, rv)
+			}
+			
+			return rv;
+		}
+	
+	_form_init(formTabs2);
+//]]>
+</script>		
+
+
+<div id="FORM_Form" style="width: 650px;">
+	<div id="FRM003_tab_0" >
+		<!--Tab : FRM001_tab_0 -->
+		<div id="f_3" class="">
+		
+			<p align="left">
+				<b><font size="3" >Customer Details Form</font></b>
+			</p> <br/>
+			
+			
+			<p>
+			
+				
+				<label class="FormFieldLabelRequired" for="f_22_1" title="Title">Title:</label>
+				<input class="text" id="f_22_1" name="f_22_1" type="text" maxlength="50"/>
+			<br/>
+			</p>
+			<p>
+			
+				<label class="FormFieldLabelRequired" for="f_22_2" title="First Name">First Name:</label>
+				<input class="text" id="f_22_2" name="f_22_2" type="text" maxlength="50"/>
+			<br/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_22_3" title="Last Name">Last Name:</label>
+				<input class="text" id="f_22_3" name="f_22_3" type="text" maxlength="50"/>
+			<br/>
+			</p>
+			<p>
+			
+				<label class="FormFieldLabelRequired" for="f_22_4" title="Landline Number">Landline Number:</label>
+				<input class="text" id="f_22_4" name="f_22_4" type="text"/>
+			<br/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_22_5" title="Mobile Number">Mobile Number:</label>
+				<input class="text" id="f_22_5" name="f_22_5" type="text"/>
+			<br/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_22_6" title="Email Address">Email Address:</label>
+				<input class="text" id="f_22_6" name="f_22_6" type="text"/>
+			<br/>
+			</p>
+			<p>
+			
+				<label class="FormFieldLabelRequired" for="f_22_7" title="Billing Address">Billing Address:</label>				
+				<textarea class="text" cols="50" id="f_22_7" name="f_22_7" rows="6"> </textarea>
+			<br/>
+			</p>
+			<p>
+			<label class="FormFieldLabelRequired" for="f_22_8" title="Shipping Address">Shipping Address:</label>				
+				<textarea class="text" cols="50" id="f_22_8" name="f_22_8" rows="6"> </textarea>
+			<br/>
+			</p>
+			<p>
+			<label class="FormFieldLabelRequired" for="f_22_9" title="Personal Hand Delivered">Personal Hand Delivered:</label>				
+				<textarea class="text" cols="50" id="f_22_9" name="f_22_9" rows="6"> </textarea>
+			<br/>
+			</p>
+			
+			<p align="left">
+				<b><font size="3" >Payment Details</font></b>
+			</p><br/>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_22_10" title="Payment Details">Payment Details:</label>
+				<input class="text" id="f_22_10" name="f_22_10" type="text" maxlength="50"/><br/>
+				</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_22_11" title="Preferred Method Of Payment">Preferred Method of Payment:</label>
+				<select class="text" id="f_22_11">
+				<option value="-1">Select</option>
+				<option value="cash">Cash</option> 
+				<option value="card">Card</option> 
+				<option value="cheque">Cheque</option> 
+				<option value="bank transfer">Bank Transfer</option> 
+				</select>
+				</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_22_12" title="Mailing List">Mailing List:</label>
+				<select class="text" id="f_22_12">
+				<option value="-1">Select</option>
+				<option value="cash">Cash</option> 
+				<option value="card">Card</option> 
+				<option value="cheque">Cheque</option> 
+				<option value="bank transfer">Bank Transfer</option> 
+				</select>
+				</p>
+			
+			<br/>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_22_13" title="Order History">Order History:</label>
+				<input class="text" id="f_22_13" name="f_22_13" type="text"/>
+			<br/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_22_14" title="Appointment History">Appointment History:</label>
+				<input class="text" id="f_22_14" name="f_22_14" type="text"/>
+			<br/>
+			</p>
+			
+			
+			
+			
+		</div>
+	</div>
+</div>
+

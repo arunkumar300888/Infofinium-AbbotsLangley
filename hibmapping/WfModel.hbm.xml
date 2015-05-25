@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ardhika.wfar">
+	<class name="WfModel" table="wf_model">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<property name="name" column="model_name"/>
+		<many-to-one name="start" class="com.ardhika.wfar.WfNode"
+			column="start"  lazy="false"/>
+			<many-to-one name="end" class="com.ardhika.wfar.WfNode"
+			column="end"  lazy="false"/>
+		<set name="nodes" table="wf_model_nodes"  lazy="false" cascade="all">
+			<key>
+				<column name="model_id" not-null="true" />
+			</key>
+			<one-to-many class="com.ardhika.wfar.WfNode" />
+		</set>
+		<set name="attribs" lazy="false" cascade="all" table="wf_model_attr">
+			<key>
+				<column name="model_id" not-null="true" />
+			</key>
+			<many-to-many class="com.ardhika.wfar.WfAttribute" column="attribute_id" unique="true" />
+		</set>
+		<property name="creatorRole" column="creator_role"/>
+		<property name="timeBound" column="time_bound"/>
+		<property name="modelCategory" column="model_category"/>
+		
+		<set name="forms" table="forms_model" lazy="false" cascade="all">
+        	<key column="model_id"/>
+        	<many-to-many column="forms_id" class="uk.co.jmr.webforms.db.pojo.Forms" fetch="join"/>
+        </set>
+		
+	</class>
+</hibernate-mapping> 
+      
+        

@@ -1,0 +1,398 @@
+/*@import url("fonts.css");*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(img/bg.jpg) fixed;
+}
+
+body,a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: lighter;
+	color: #000000;
+}
+
+.main {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	min-height: 600px;
+}
+
+.spacer {
+	padding: 0px 5px;
+}
+
+input {
+	height: 20px;
+	line-height: 20px;
+}
+
+.logo {
+	/* background: url(img/logo_Dash_BWood.jpg) no-repeat right top; */
+	/*  background: url(img/logo_ICSA.gif) no-repeat right top; */
+	/*  background: url(img/nhs_logo.jpg) no-repeat right center; */
+	  background: url(img/logo_ainscough.jpg) no-repeat right center;
+	height: 90px;
+}
+
+.hed {
+	height: 33px;
+}
+
+.hed .space {
+	width: 55%;
+}
+
+.sidesplit {
+	background: url(img/sideDivider.jpg) no-repeat;
+	width: 32px;
+	height: 33px;
+}
+
+.butn,.butngreen,.butnnred,.butnDisabled {
+	height: 26px;
+	line-height: 26px;
+	padding: 0px 2px;
+	cursor: pointer;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.butngreen {
+	border: 1px solid #0e4a00;
+	background: url(img/btngreen.png) repeat-x center center;
+}
+
+.butnnred {
+	border: 1px solid #4c0900;
+	background: url(img/btnred.jpg) repeat-x center center;
+}
+
+.butn {
+	border: 1px solid #001A43;
+	background: url(img/btn.jpg) repeat-x center center;
+}
+
+.butnDisabled {
+	border: 1px solid #001A43;
+	background: url(img/btnDisabled.jpg) repeat-x center center;
+	cursor: default;
+}
+
+.butn_right .butn,.butngreen,.butnnred,.butnDisabled {
+	margin-bottom: 5px;
+}
+
+.butnupload {
+	padding-left: 20px;
+	height: 17px;
+	line-height: 18px;
+	background: url(img/icnUpload.jpg) no-repeat left top;
+	margin-left: 4px;
+}
+
+.butnlogout {
+	padding-left: 19px;
+	height: 17px;
+	background: url(img/icnLogout.jpg) no-repeat left top;
+}
+
+.equalier {
+	
+}
+
+.left {
+	width: 283px;
+}
+
+.mid {
+	width: 12px;
+}
+
+.h12 {
+	height: 12px;
+}
+
+.title1 {
+	border-bottom: 1px dashed #929292;
+	/* height: 32px; */
+	line-height: 28px;
+	font-size: 15px;
+	padding-left: 8px;
+	margin-bottom: 6px;
+	font-family: arial;
+	word-break: break-all;
+	/*overflow: hidden;
+	  width: 980px;
+	*/
+}
+
+.title img {
+	position: relative;
+	top: 2px;
+}
+
+.title {
+	background: #022459 url(img/flower.jpg) no-repeat right center;
+	/* height: 32px; */
+	line-height: 28px;
+	font-size: 17px;
+	padding-left: 8px;
+	/*font-family: "Conv_mathis_Pro";*/
+	font-family: arial;
+	word-break: break-all;
+}
+
+.title a {
+	padding-right: 12px;
+}
+
+.bor {
+	border: 1px solid #022459;
+	min-height: 60px;
+}
+
+.trayred,.trayblue,.trayorange {
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+}
+
+.trayred {
+	background-color: #990000;
+}
+
+.trayred .point,.trayblue .point,.trayorange .point {
+	position: relative;
+	top: 31px;
+	color: #022459;
+}
+
+.trayred .top {
+	background: url(img/dashboard2_26.jpg) no-repeat center center;
+}
+
+.trayred .bot {
+	background: url(img/redflip.jpg) repeat-x;
+}
+
+.traygray {
+	background-color: #c6c6c6;
+}
+
+.traygray .top {
+	background: url(img/dashboard2_28.jpg) no-repeat center center;
+}
+
+.traygray .bot {
+	background: #acacac;
+}
+
+.trayblue {
+	background: #000099;
+}
+
+.trayblue .top {
+	background: url(img/dashboard2_30.png) no-repeat center center;
+}
+
+.trayblue .bot {
+	background: #00183c;
+}
+
+.trayorange {
+	background-color: #ff9204;
+}
+
+.trayorange .top {
+	background: url(img/dashboard2_30.png) no-repeat center center;
+}
+
+.trayorange .bot {
+	background: #00183c;
+}
+
+.trayred .top,.traygray .top,.trayblue .top,.trayorange .top {
+	height: 105px;
+	width: 140px;
+}
+
+.trayred .bot,.traygray .bot,.trayblue .bot,.trayorange .bot {
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	background: url(img/botflip.png) repeat-x;
+}
+
+.searchpan {
+	width: 270px;
+	margin: 4px auto;
+}
+
+.success {
+	color: #006600;
+}
+
+.err_lbl,.mand,.deletion {
+	color: #FF0000;
+}
+
+.err_lbl {
+	font-size: 10px;
+}
+
+.butn113 {
+	width: 113px;
+	background: url(img/butnbg.png) no-repeat;
+	height: 31px;
+	line-height: 28px;
+	border-style: none;
+	cursor: pointer;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.pop_link:hover {
+	color: #FF0000;
+}
+
+.inden {
+	padding: 9px;
+}
+
+.tbStyle {
+	border: 1px solid #b1c9d6;
+}
+
+.tbStyle td,.tbStyle th {
+	padding: 4px 2px;
+	text-align: left;
+}
+
+.tbStyle .row1 {
+	background-color: #FFFFFF;
+}
+
+.tbStyle .row2 {
+	background-color: #cbe7fc;
+}
+
+.controlspan span {
+	position: relative;
+	top: -5px;
+	padding: 0px 2px;
+}
+
+.sq-list {
+	padding: 8px 0px;
+}
+
+.sq-list li {
+	margin: 0;
+	padding: 8px 0px;
+	list-style: none;
+}
+
+.footer {
+	height: 35px;
+	line-height: 35px;
+	margin-top: 12px;
+}
+
+.asterisk {
+	color: #FF0000;
+}
+
+.submenu1 {
+	background: url(img/submenu_bg.png) repeat-x top left;
+	position: absolute;
+	padding: 4px 0px 14px 0px;
+	width: 180px;
+	display: none;
+	z-index: 2000;
+}
+
+.submenu1 li {
+	margin-bottom: 4px;
+	list-style: none;
+}
+
+.submenu1 li a {
+	color: #000000;
+	display: block;
+	padding: 5px 8px;
+	border-bottom: 1px solid #e6effd;
+}
+
+.submenu1 li a:hover {
+	background: #022459 url(img/submenuactive.jpg) repeat-x;
+}
+
+.submenu1 li>ul {
+	position: absolute;
+	display: none;
+	left: 180px;
+	width: 180px;
+	top: 3px;
+	background: url(img/submenu_bg.png) repeat-x bottom left;
+}
+
+.submenu1 li:hover>ul {
+	display: inline-block;
+}
+
+/*common*/
+.logo,.hed,.searchpan input,.searchpan select {
+	width: 100%;
+}
+
+.hed,.tbStyle th,.footer,.showattributebg /*Dark Blue*/ {
+	background-color: #022459;
+}
+
+.pop_link,.title1 {
+	color: #022459;
+}
+
+.hed a,.hed,.tbStyle th,.title,.butn113,.trayred .bot,.traygray .bot,.trayblue .bot,.trayorange .bot,.footer,.title a,.butn,.butngreen,.butnnred,.submenu1 li a:hover
+	{
+	color: #FFFFFF;
+}
+
+.hed a,.hed {
+	display: block;
+}
+
+.hed a,.pop_link:hover,.submenu1 li a {
+	text-decoration: none;
+}
+
+.searchpan,.searchpan input,.value,.value input,.value select,.trayred,.trayblue,.trayorange,.title a,.title,.butn,.value,.butngreen,.butnnred,.pop_link,.mand,.deletion,.success,.title1
+	{
+	font-weight: bold;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bg_title {
+	background: #022459 url(img/flower.jpg) no-repeat right center;
+	font-family: arial;
+	font-size: 17px;
+	line-height: 28px;
+	padding-left: 8px;
+	color: #FFFFFF;
+	font-weight: bold;
+}

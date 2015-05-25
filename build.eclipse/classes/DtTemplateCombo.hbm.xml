@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain.dt">
+<class name="DtTemplateCombo" table="dt_template_combo">
+	<id name="id" unsaved-value="-1">
+			<generator class="native" />
+	</id>
+	
+	<many-to-one name="doctype" class="uk.co.jmr.sdp.domain.Doctype" column="doc_type_id" lazy="false"></many-to-one>
+	<property name="templateUrl" column="template_url"/>
+	<property name="templateName" column="template_name"/> 
+	
+	<set name="templateComboValues" lazy="false" cascade="all" table="dt_temp_combo_values">
+		<key>
+			<column name="template_combo_id" not-null="true" />
+		</key>
+		<one-to-many class="uk.co.jmr.sdp.domain.dt.DtTemplateComboValue" />
+	</set>
+
+</class>
+</hibernate-mapping>

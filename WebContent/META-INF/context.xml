@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/SDP">
+
+	<!--
+		declare/config the infoFiniumDBInst in server.conf if deploying the jar by plaing in webapps.
+		
+		if unpacking and deployimg using alternative method copy SDP.xml to conf/Catalina/localhost
+	-->
+		<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver"
+			maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/infoFiniumDB"
+			password="root" type="javax.sql.DataSource"
+			url="jdbc:mysql://localhost:3306/abbottslangleyformsnew?autoreconnect=true"
+			username="root" />
+		<Resource auth="Container" mail.debug="true" mail.password="dsjvwf123"
+			mail.smtp.auth="true" mail.smtp.host="smtp.gmail.com" mail.smtp.port="587"
+			mail.smtp.starttls.enable="true" mail.smtp.user="sysdsjvwf@gmail.com"
+			mail.transport.protocol="smtp" name="mail/Session" password="dsjvwf123"
+			type="javax.mail.Session" username="sysdsjvwf@gmail.com" />
+			
+	<!-- 		<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver"
+			maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/infoFiniumDB"
+			password="root" type="javax.sql.DataSource"
+			url="jdbc:mysql://192.168.1.15:3307/infofiniumtest?autoreconnect=true"
+			username="root" />
+		   <Resource auth="Container" mail.debug="true" mail.password="dsjvwf123"
+			mail.smtp.auth="true" mail.smtp.host="smtp.gmail.com" mail.smtp.port="587"
+			mail.smtp.starttls.enable="true" mail.smtp.user="sysdsjvwf@gmail.com"
+			mail.transport.protocol="smtp" name="mail/Session" password="dsjvwf123"
+			type="javax.mail.Session" username="sysdsjvwf@gmail.com" /> -->
+	
+
+	<!-- <ResourceLink
+		name="jdbc/infoFiniumDB"
+		global="jdbc/infoFiniumDBInst"
+		type="javax.sql.DataSource"/>
+	
+	<ResourceLink name="mail/Session"
+		global="mail/Session"
+		type="javax.mail.Session"/> -->
+</Context>

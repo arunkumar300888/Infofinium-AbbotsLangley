@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="TransactionDetails" table="transactiondetails">
+
+		<id name="id" unsaved-value="-1"  >
+			<generator class="native"></generator>
+		</id>
+		<!-- <property name="propertyId" column="property_id" />
+		<property name="tenancyId" column="tenancy_id" /> -->
+		
+		<many-to-one name="propertyId" class="uk.co.jmr.sdp.domain.PropertyDetailsForm" lazy="false">
+					<column name="property_id"  />
+				</many-to-one>
+				
+				<many-to-one name="tenancyId" class="uk.co.jmr.sdp.domain.TenancyForm" lazy="false">
+					<column name="tenancy_id"  />
+				</many-to-one>
+		
+		<property name="transactiontype" column="transactiontype" />
+		<property name="transactiondate" column="transactiondate" />
+		<property name="amount" column="amount" />
+		<property name="rentreceived" column="rentreceived" />
+		<property name="userId" column="user_id" />
+		<property name="transactionMode" column="transactionmode" />
+		
+	</class>
+</hibernate-mapping>

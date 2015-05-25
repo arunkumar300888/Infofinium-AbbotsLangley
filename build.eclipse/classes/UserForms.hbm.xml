@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="uk.co.jmr.webforms.db.pojo.UserForms" table="user_forms">
+		<id name="id" type="long" unsaved-value="-1">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<many-to-one name="forms" class="uk.co.jmr.webforms.db.pojo.Forms" fetch="select" lazy="false">
+			<column name="form_id" not-null="true" />
+		</many-to-one>
+		<property name="userId" type="long">
+			<column name="user_id" not-null="true" />
+		</property>
+		
+		<property name="title" column="title"/>
+		
+		<property name="status" type="char">
+			<column name="status" length="1" not-null="true" />
+		</property>
+		<property name="createdOn" type="timestamp" generated="insert">
+			<column name="created_on" length="29" not-null="true" />
+		</property>
+		<property name="updatedOn" type="timestamp" generated="always">
+			<column name="updated_on" length="29" />
+		</property>
+		<!-- <property name="caseId" column="case_id"/> -->
+		<set name="formDatas" inverse="true" order-by="html_form_def_id, v_index asc" lazy="false" fetch="select" cascade="all">
+			<key>
+				<column name="user_form_id" not-null="true" />
+			</key>
+			<one-to-many class="uk.co.jmr.webforms.db.pojo.FormData" />
+			
+		</set>
+		
+		
+		
+		<property name="active" column="active" type="character"/>
+		<property name="securityGroupId" column="security_group_id"/>
+		<property name="submissionDate" column="submission_date"/>
+		<property name="companyId" column="company_id"/>
+		<property name="modelId" column="model_id"/>
+		<property name="formTable" column="form_table"/>
+	</class>
+</hibernate-mapping>

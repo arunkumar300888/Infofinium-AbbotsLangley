@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context
+	allowLinking="true"
+	crossContext="true"
+	docBase="${catalina.base}/APPS/web">
+
+	<!--
+		declare/config the infoFiniumDBInst in server.conf if deploying the jar by plaing in webapps.
+		same for mail/Session.
+		
+		if unpacking and deployimg alternative method copy SDP.xml to conf/Catalina/localhost
+		and uncomment one of the follwoing sections and declare database in server.conf if reuired
+	-->
+	
+	<!-- if going to declare/config infoFiniumDBInst in server.conf -->
+	<!--
+	<ResourceLink
+		name="jdbc/infoFiniumDB"
+		global="jdbc/infoFiniumDBInst"
+		type="javax.sql.DataSource"/>
+
+	<ResourceLink name="mail/Session"
+		global="mail/Session"
+		type="javax.mail.Session"
+	-->
+	
+	<!-- if not declaring DB in server.conf and unpacking and deploy by copying into conf/Catalina/localhost -->
+	<Resource
+		auth="Container"
+		driverClassName="com.mysql.jdbc.Driver"
+		maxActive="100"
+		maxIdle="30"
+		maxWait="10000"
+		name="jdbc/infoFiniumDB"
+		password="root"
+		type="javax.sql.DataSource"
+		url="jdbc:mysql://localhost:3307/infofiniumint?autoreconnect=true"
+		username="root"/>
+
+	<Resource
+		name="mail/Session"
+		type="javax.mail.Session"
+		auth="Container"
+		mail.smtp.host="smtp.gmail.com" 
+		mail.smtp.auth="true" 
+		username="sysdsjvwf@gmail.com"
+		password="dsjvwf123" 
+		mail.smtp.user="sysdsjvwf@gmail.com"
+		mail.password="dsjvwf123"
+		mail.smtp.port="587"
+		mail.smtp.starttls.enable="true"
+		mail.transport.protocol="smtp"
+		mail.debug="true"/> 
+
+</Context>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="uk.co.jmr.sdp.domain.UserFormRef" table="user_form_ref">
+		<id name="id" type="long" unsaved-value="-1">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<many-to-one name="userForms" class="uk.co.jmr.webforms.db.pojo.UserForms" lazy="false">
+			<column name="user_form_id" not-null="true" />
+		</many-to-one>
+		<property name="formDataTable" >
+			<column name="form_data_table" not-null="true" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

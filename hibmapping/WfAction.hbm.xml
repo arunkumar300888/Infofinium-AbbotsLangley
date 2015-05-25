@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ardhika.wfar">
+
+	<class name="WfAction" table="wf_action" >
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<property name="name" />
+		<many-to-one name="targetNode" class="com.ardhika.wfar.WfNode"
+			column="targetnode_id"  lazy="false"/>
+		<property name="reasonRequired" column="reason_required"/> 
+		<property name="targetStatus" column="target_status"></property>
+		
+		</class>
+		
+
+</hibernate-mapping>

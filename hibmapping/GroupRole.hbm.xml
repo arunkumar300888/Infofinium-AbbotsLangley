@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="GroupRole" table="group_role">
+
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<many-to-one name="role" class="uk.co.jmr.sdp.domain.Role"
+			column="role_id" lazy="false" not-null="true" />
+
+		<many-to-one name="group" class="uk.co.jmr.sdp.domain.Group"
+			column="group_id" lazy="false" not-null="true" />
+
+	</class>
+</hibernate-mapping>

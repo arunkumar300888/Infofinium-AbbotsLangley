@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="uk.co.jmr.webforms.db.pojo.Arrays" table="arrays">
+		<id name="id" type="long" unsaved-value="-1">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<property name="name" type="string">
+			<column name="name" length="100" not-null="true" unique="true" />
+		</property>
+		<property name="description" type="string">
+			<column name="description" length="250" />
+		</property>
+		<set name="fieldses" inverse="true" order-by="id asc">
+			<key>
+				<column name="array_id" />
+			</key>
+			<one-to-many class="uk.co.jmr.webforms.db.pojo.Fields" />
+		</set>
+		<set name="formFieldMaps" inverse="true" order-by="id asc" lazy="false" fetch="select" cascade="all">
+			<key>
+				<column name="array_id" />
+			</key>
+			<one-to-many class="uk.co.jmr.webforms.db.pojo.FormFieldMap" />
+		</set>
+		<set name="arrayItemses" inverse="true" order-by="rank asc" lazy="false" fetch="select" cascade="all">
+			<key>
+				<column name="array_id" not-null="true" />
+			</key>
+			<one-to-many class="uk.co.jmr.webforms.db.pojo.ArrayItems" />
+		</set>
+	</class>
+</hibernate-mapping>

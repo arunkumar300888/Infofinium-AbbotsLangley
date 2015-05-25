@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="uk.co.jmr.webforms.db.pojo.ArrayItems" table="array_items">
+		<id name="id" type="long" unsaved-value="-1">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<many-to-one name="arrays" class="uk.co.jmr.webforms.db.pojo.Arrays" fetch="select">
+			<column name="array_id" not-null="true" />
+		</many-to-one>
+		<property name="rank" type="int">
+			<column name="rank" not-null="true" />
+		</property>
+		<property name="value" type="string">
+			<column name="value" length="250" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>

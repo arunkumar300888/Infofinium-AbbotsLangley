@@ -1,0 +1,5 @@
+package com.ardhika.wfar;
+
+public enum WfNodeType {
+	WF_TASK_NODE, WF_DECISION_NODE, WF_STOP_NODE, WF_CANCEL_NODE, WF_MAIL_NODE, WF_FORK_NODE, WF_JOIN_NODE, WF_ASSIGN_NODE
+}

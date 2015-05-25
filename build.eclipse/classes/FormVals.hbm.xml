@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="uk.co.jmr.sdp.domain.FormVals" table="form_vals">
+		<id name="id" type="long" unsaved-value="-1">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<!-- <property name="userFormId" >
+			<column name="user_form_id" not-null="true" />
+		</property>
+		
+		<property name="formId" >
+			<column name="form_id" length="50" not-null="true" />
+		</property> -->
+		<property name="value" >
+			<column name="value" length="250" />
+		</property>
+		
+		
+	</class>
+</hibernate-mapping>

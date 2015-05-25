@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="FormCompanyGroup" table="form_company_group">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+			<many-to-one name="formDefs" class="uk.co.jmr.webforms.db.pojo.FormDefs"
+			column="form_def_id" lazy="false"  />
+			
+			<many-to-one name="attributeValue" class="uk.co.jmr.sdp.domain.dt.AttributeValue"
+			column="attr_value_id" lazy="false"  />
+		
+ 
+	</class>
+</hibernate-mapping>

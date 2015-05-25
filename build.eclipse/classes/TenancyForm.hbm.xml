@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="TenancyForm" table="tenancy_form">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+<property name="tenancyTitle"  column="tenancytitle"/>
+<many-to-one name="propertyDetailsForm" class="uk.co.jmr.sdp.domain.PropertyDetailsForm" lazy="false">
+			<column name="property_id"  />
+		</many-to-one>
+<property name="propertyAddress"  column="propertyaddress"/>
+<property name="typeOfRental"  column="typeofrental"/>
+<property name="roomNumber"  column="roomnumber"/>
+<property name="landLordFirstName"  column="landlordfirstname"/>
+<property name="landLordLastName"  column="landlordlastname"/>
+<property name="landLordAddress"  column="landlordaddress"/>
+<property name="landLordEmailAddress"  column="landlordemailaddress"/>
+<property name="landLordContactNumber"  column="landlordcontactnumber"/>
+<property name="employerFirstName"  column="employerfirstname"/>
+<property name="employerLastName"  column="employerlastname"/>
+<property name="employerAddress"  column="employeraddress"/>
+<property name="employerEmailAddress"  column="employeremailaddress"/>
+<property name="employerContactNumber"  column="employercontactnumber"/>
+<property name="guarantorFirstName"  column="guarantorfirstname"/>
+<property name="guarantorLastName"  column="guarantorlastname"/>
+<property name="guarantorAddress"  column="guarantoraddress"/>
+<property name="guarantorEmailAddress"  column="guarantoremailaddress"/>
+<property name="guarantorContactNumber"  column="guarantorcontactnumber"/>
+<property name="kinFirstName"  column="kinfirstname"/>
+<property name="kinLastName"  column="kinlastname"/>
+<property name="kinAddress"  column="kinaddress"/>
+<property name="kinEmailAddress"  column="kinemailaddress"/>
+<property name="kinContactNumber"  column="kincontactnumber"/>
+<property name="tenancyOpenedBy"  column="tenancyopenedby"/>
+<property name="tenancyStartedDate"  column="tenancystarteddate"/>
+<property name="tenancyClosedBy"  column="tenancyclosedby"/>
+<property name="tenancyClosedDate"  column="tenancycloseddate"/>
+<property name="checkingOutForm"  column="checkingoutform"/>
+<property name="linkToProperty"  column="linktoproperty"/>
+<property name="linkToTenancyAgreement"  column="linktotenancyagreement"/>
+<property name="linkToRentAccounts"  column="linktorentaccounts"/>
+<property name="legalNotifications"  column="legalnotifications"/>
+<property name="tenancyDepositCertificate"  column="tenancydepositcertificate"/>
+<property name="councilTaxRegistration"  column="counciltaxregistration"/>
+<property name="additionalLinks"  column="additionallinks"/>
+<property name="correspondenceWithTenants"  column="correspondencewithtenants"/>
+<property name="correspondenceLink"  column="correspondencelink"/>
+<property name="employerCompany"  column="employercompany"/>
+
+<property name="guarantorCompany"  column="guarantorcompany"/>
+
+<property name="tenantTitle"  column="tenanttitle"/>
+<property name="tenantFirstName"  column="tenantfirstname"/>
+<property name="tenantLastName"  column="tenantlastname"/>
+<property name="tenantDateOfBirth"  column="tenantdateofbirth"/>
+<property name="tenantLandlineNumber"  column="tenantlandlinenumber"/>
+<property name="tenantMobileNumber"  column="tenantmobilenumber"/>
+<property name="tenantEmailAddress"  column="tenantemailaddress"/>
+<property name="tenantNationalInsuranceNumber"  column="tenantnationalinsurancenumber"/>
+<property name="tenantCurrentAddress"  column="tenantcurrentaddress"/>
+<property name="tenantPassport"  column="tenantpassport"/>
+<property name="tenantDriversLicense"  column="tenantdriverslicense"/>
+<property name="tenantCreditCheck"  column="tenantcreditcheck"/>
+<property name="tenantReferenceCheck"  column="tenantreferenceCheck"/>
+<property name="tenantAdditionalRemarks"  column="tenantadditionalremarks"/>
+<property name="rentDueDate"  column="rentduedate"/>
+<property name="tenancyFinishDate"  column="tenancyfinishdate"/>
+<property name="checkingInForm"  column="checkinginform"/>
+<property name="isOccupied"  column="isoccupied"/>
+
+<property name="createdOn"  column="createdon"/>
+		<property name="updatedOn"  column="updatedOn"/>
+		<property name="updatedDetails"  column="updateddetails"/>
+		<many-to-one name="createdBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="createdby"  />
+				</many-to-one>
+		<many-to-one name="updatedBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="updatedby"  />
+				</many-to-one>
+		<property name="status"  column="status"/>
+ 
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,237 @@
+div.FullPagePopupPanel
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:10000;
+	background: rgba(255,255,255,0.40);
+	visibility: hidden;
+}
+
+div.popupDialog
+{
+	position:absolute;
+	background-color:rgb(255,255,255);
+	box-shadow: 6px 6px 12px #905050;
+	font-size: 14px;
+	z-index: 200;
+}
+
+.dialog
+{
+	border: 1px solid #EAEAEA;
+}
+
+.dialogTitle
+{
+	border:thin solid;
+	text-align:center;
+	background-color: #BB0000;
+	font-weight:bolder;
+	color: #FFFFFF;
+}
+
+td.calendar_cellHeader
+{
+	text-align:center;
+	width:4ex;
+	background-color: #EAEAEA;
+	color: #BB0000;
+	
+}
+
+
+td.calendar_cellEnabled
+{
+	text-align:center;
+	width:4ex;
+	cursor:pointer;
+}
+
+td.calendar_cellDisabled
+{
+	text-align:center;
+	width:4ex;
+	cursor:default;
+}
+
+td.calendar_cellSelected
+{
+	text-align:center;
+	width:4ex;
+	background-color: #DD0000;
+	color: #FFFFFF;;
+	
+	cursor:default;
+}
+
+#FORM_Container
+{
+	background: white; 
+	padding:10px;
+	margin-left: 10px; 
+	margin-top: 10px; 
+}
+
+#FORM_Form
+{
+	/* background: #EAEAEA; 
+	border: solid thin; 
+	overflow-y: auto; 
+	overflow-x: hidden;
+	font-size: 14px; */
+}
+
+#FORM_ButtonBar
+{
+	width: 650px;
+	text-align: right;
+	margin-top:20px;
+}
+
+#FORM_ButtonBar button
+{
+	width:120px;
+}
+
+fieldset.Form
+{
+	width: 96%;
+}
+
+fieldset.Form p
+{
+	margin: 5px;
+	padding:0px;
+	vertical-align: middle;
+	clear: both;
+}
+
+fieldset.Form fieldset.Form
+{
+	margin: 5px;
+}
+
+img.actionIcon
+{
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+legend
+{
+	font-size: 110%;
+}
+
+label.FormFieldLabel
+{
+	float: left;
+	width: 30%;
+}
+
+label.FormFieldLabelRequired
+{
+	float: left;
+	width: 30%;
+	
+}
+
+label.FormFieldLabelInvalid
+{
+	float: left;
+	width: 30%;
+	color: #FF0000;
+}
+
+input.FormInputText
+{
+	width: 60%;
+}
+
+input.FormInputTextAjax
+{
+	width: 55%;
+	border: solid thin;
+	background: #EAEAEA;
+}
+
+input.FormInputPassword
+{
+	width: 60%;
+}
+
+input.FormInputPasswordAjax
+{
+	width: 55%;
+	border: solid thin;
+	background: #d0d0d0;
+}
+
+input.FormInputNumber
+{
+	width: 60%;
+}
+
+input.FormInputNumberAjax
+{
+	width: 55%;
+	border: solid thin;
+	background: #d0d0d0;
+}
+
+input.FormInputInteger
+{
+	width: 60%;
+}
+
+input.FormInputIntegerAjax
+{
+	width: 55%;
+	border: solid thin;
+	background: #d0d0d0;
+}
+
+input.FormInputTs
+{
+	width: 20ex;
+	width: 50%;
+}
+
+input.FormInputTsAjax
+{
+	width: 20ex;
+	border: solid thin;
+	background: #d0d0d0;
+}
+
+input.FormInputDate
+{
+	width: 12ex;
+}
+
+input.FormInputDateAjax
+{
+	width: 12ex;
+	border: solid thin;
+	background: #d0d0d0;
+}
+
+
+textarea.FormTextarea
+{	
+	height:20ex;
+	width:60%;
+	resize:none;
+}
+
+select.FormListbox
+{
+	width:60%;
+}
+
+select.FormListboxAjax
+{
+	width:55%;
+}

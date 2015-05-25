@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="CaseUserForms" table="case_user_forms">
+		<id name="id" type="long" unsaved-value="-1">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<property name="caseId" column="case_id" type="long"/>
+		<property name="userFormsId" column="user_form_id" type="long"></property>
+		<property name="targetDate" column="target_date" />
+		<property name="author" column="author" />
+		<property name="name" column="document_name"/>
+		<property name="keywords" column="keywords"></property>
+		<property name="ebNo" column="eb_number" />
+		<property name="abandon" column="abandon" type="boolean" />
+	</class>
+</hibernate-mapping>

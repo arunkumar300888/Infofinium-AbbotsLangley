@@ -1,0 +1,552 @@
+<script type="text/javascript">
+//<![CDATA[
+
+	var formTabs2 =
+	[
+		{vmask:[0],
+		rmask:[0],
+		fields:[ 													 
+			{name:"f_4_1",     id:"f_4_1",    type: 'S',  isRequired: true, ownedBy: null},
+			{name:"f_4_2",     id:"f_4_2",	  type: 'S',  isRequired: true,  ownedBy: null},
+			{name:"f_4_3",     id:"f_4_3",    type: 'S',  isRequired: true, ownedBy: null},
+			{name:"f_4_4",     id:"f_4_4",    type: 'S',  isRequired: true, ownedBy: null},
+			{name:"f_4_5",     id:"f_4_5",	  type: 'T',  isRequired: true,  ownedBy: null},
+			{name:"f_4_6",     id:"f_4_6",	  type: 'T',  isRequired: true,  ownedBy: null},
+			{name:"f_4_7",     id:"f_4_7",	  type: 'T',  isRequired: true,  ownedBy: null},
+			{name:"f_4_8",     id:"f_4_8",	  type: 'T',  isRequired: true,  ownedBy: null},
+			{name:"f_4_9",     id:"f_4_9",	  type: 'T',  isRequired: true,  ownedBy: null}, 
+			{name:"f_4_10",    id:"f_4_10",   type: 'S',  isRequired: true, ownedBy: null},
+			
+		    {name:"f_4_11",     id:"f_4_11",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_4_59",     id:"f_4_59",	  type: 'S',  isRequired: false,  ownedBy: "f_4_11"},
+			{name:"f_4_12",     id:"f_4_12",   type: 'T', isRequired: false, ownedBy: "f_4_11"},
+			{name:"f_4_13",     id:"f_4_13",   type:'S',  isRequired: false,  ownedBy: "f_4_11"},
+		   
+			{name:"f_4_14",     id:"f_4_14",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_60",     id:"f_4_60",	  type: 'S',  isRequired: false,  ownedBy: "f_4_14"},
+			{name:"f_4_15",     id:"f_4_15",   type: 'T', isRequired: false, ownedBy: "f_4_14"},
+			{name:"f_4_16",     id:"f_4_16",   type: 'S', isRequired: false, ownedBy: "f_4_14"},
+			
+			{name:"f_4_17",     id:"f_4_17",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_61",     id:"f_4_61",	  type: 'S',  isRequired: false,  ownedBy: "f_4_17"},
+			{name:"f_4_18",     id:"f_4_18",   type: 'T', isRequired: false, ownedBy: "f_4_17"},
+			{name:"f_4_19",     id:"f_4_19",   type: 'S', isRequired: false, ownedBy: "f_4_17"},
+			
+			{name:"f_4_20",     id:"f_4_20",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_62",     id:"f_4_62",	  type: 'S',  isRequired: false,  ownedBy: "f_4_20"},
+			{name:"f_4_21",     id:"f_4_21",   type: 'T', isRequired: false,  ownedBy: "f_4_20"},
+			{name:"f_4_22",     id:"f_4_22",   type: 'S',  isRequired: false, ownedBy: "f_4_20"},
+			
+			{name:"f_4_23",     id:"f_4_23",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_63",     id:"f_4_63",	  type: 'S',  isRequired: false,  ownedBy: "f_4_23"},
+			{name:"f_4_24",     id:"f_4_24",   type: 'T',  isRequired: false, ownedBy: "f_4_23"},
+			{name:"f_4_25",     id:"f_4_25",   type: 'S', isRequired: false,  ownedBy: "f_4_23"},
+			
+			{name:"f_4_26",     id:"f_4_26",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_64",     id:"f_4_64",	  type: 'S',  isRequired: false,  ownedBy: "f_4_26"},
+			{name:"f_4_27",     id:"f_4_27",   type: 'T',  isRequired: false, ownedBy: "f_4_26"},
+			{name:"f_4_28",     id:"f_4_28",   type: 'S',  isRequired: false, ownedBy: "f_4_26"},
+			
+			{name:"f_4_29",     id:"f_4_29",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_65",     id:"f_4_65",	  type: 'S',  isRequired: false,  ownedBy: "f_4_29"},
+			{name:"f_4_30",     id:"f_4_30",   type: 'T',  isRequired: false, ownedBy: "f_4_29"},
+			{name:"f_4_31",     id:"f_4_31",   type: 'S',   isRequired: false, ownedBy: "f_4_29"},
+			
+			{name:"f_4_32",     id:"f_4_32",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_66",     id:"f_4_66",	  type: 'S',  isRequired: false,  ownedBy: "f_4_32"},
+			{name:"f_4_33",     id:"f_4_33",   type: 'T',  isRequired: false,  ownedBy: "f_4_32"},
+			{name:"f_4_34",     id:"f_4_34",   type: 'S',  isRequired: false, ownedBy: "f_4_32"},
+			
+			{name:"f_4_35",     id:"f_4_35",   type: '',   isRequired: false, ownedBy: null},
+			{name:"f_4_67",     id:"f_4_67",	  type: 'S',  isRequired: false,  ownedBy: "f_4_35"},
+			{name:"f_4_36",     id:"f_4_36",   type: 'T',   isRequired: false, ownedBy: "f_4_35"},
+			{name:"f_4_37",     id:"f_4_37",   type: 'S',  isRequired: false,  ownedBy: "f_4_35"},
+			
+			{name:"f_4_38",     id:"f_4_38",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_68",     id:"f_4_68",	  type: 'S',  isRequired: false,  ownedBy: "f_4_38"},
+			{name:"f_4_39",     id:"f_4_39",   type: 'T',   isRequired: false, ownedBy: "f_4_38"},
+			{name:"f_4_40",     id:"f_4_40",   type: 'S',   isRequired: false, ownedBy: "f_4_38"},
+			
+			{name:"f_4_41",     id:"f_4_41",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_69",     id:"f_4_69",	  type: 'S',  isRequired: false,  ownedBy: "f_4_41"},
+			{name:"f_4_42",     id:"f_4_42",   type: 'T',  isRequired: false, ownedBy: "f_4_41"},
+			{name:"f_4_43",     id:"f_4_43",   type: 'S',   isRequired: false, ownedBy: "f_4_41"},
+			
+			{name:"f_4_44",     id:"f_4_44",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_70",     id:"f_4_70",	  type: 'S',  isRequired: false,  ownedBy: "f_4_44"},
+			{name:"f_4_45",     id:"f_4_45",   type: 'T',  isRequired: false,  ownedBy: "f_4_44"},
+			{name:"f_4_46",     id:"f_4_46",   type: 'S',  isRequired: false, ownedBy: "f_4_44"},
+			
+			{name:"f_4_47",     id:"f_4_47",   type: '',   isRequired: false, ownedBy: null},
+			{name:"f_4_71",     id:"f_4_71",	  type: 'S',  isRequired: false,  ownedBy: "f_4_47"},
+			{name:"f_4_48",     id:"f_4_48",   type: 'T',   isRequired: false, ownedBy: "f_4_47"},
+			{name:"f_4_49",     id:"f_4_49",   type: 'S',  isRequired: false,  ownedBy: "f_4_47"},
+			
+			{name:"f_4_50",     id:"f_4_50",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_72",     id:"f_4_72",	  type: 'S',  isRequired: false,  ownedBy: "f_4_50"},
+			{name:"f_4_51",     id:"f_4_51",   type: 'T',   isRequired: false, ownedBy: "f_4_50"},
+			{name:"f_4_52",     id:"f_4_52",   type: 'S',   isRequired: false, ownedBy: "f_4_50"},
+			
+			{name:"f_4_53",     id:"f_4_53",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_73",     id:"f_4_73",	  type: 'S',  isRequired: false,  ownedBy: "f_4_53"},
+			{name:"f_4_54",     id:"f_4_54",   type: 'T',  isRequired: false, ownedBy: "f_4_53"},
+			{name:"f_4_55",     id:"f_4_55",   type: 'S',   isRequired: false, ownedBy: "f_4_53"},
+			
+			{name:"f_4_56",     id:"f_4_56",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_74",     id:"f_4_74",	  type: 'S',  isRequired: false,  ownedBy: "f_4_56"},
+			{name:"f_4_57",     id:"f_4_57",   type: 'T',  isRequired: false,  ownedBy: "f_4_56"},
+			{name:"f_4_58",     id:"f_4_58",   type: 'S',  isRequired: false, ownedBy: "f_4_56"},
+			
+			{name:"f_4_75",     id:"f_4_75",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_76",     id:"f_4_76",	  type: 'S',  isRequired: false,  ownedBy: "f_4_75"},
+			{name:"f_4_77",     id:"f_4_77",   type: 'T',  isRequired: false,  ownedBy: "f_4_75"},
+			{name:"f_4_78",     id:"f_4_78",   type: 'S',  isRequired: false, ownedBy: "f_4_75"},
+			
+			{name:"f_4_79",     id:"f_4_79",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_4_80",     id:"f_4_80",	  type: 'S',  isRequired: false,  ownedBy: "f_4_79"},
+			{name:"f_4_81",     id:"f_4_81",   type: 'T',  isRequired: false,  ownedBy: "f_4_79"},
+			{name:"f_4_82",     id:"f_4_82",   type: 'S',  isRequired: false, ownedBy: "f_4_79"}]}
+				
+	];
+
+	 function _formValidationCheck()
+		{
+			var rv = true;
+			var fFrom = document.getElementById("f_4_6");
+			var from = fFrom.value;
+			from = trim(from);
+			if(from != null)
+			{
+				markFieldLabelValid(fFrom, rv)
+			}
+			
+			return rv;
+		}
+	
+	_form_init(formTabs2);
+
+//]]>
+</script>		
+
+
+<div id="FORM_Form" style="width: 650px;">
+	<div id="FRM003_tab_0" >
+		<!--Tab : FRM001_tab_0 -->
+		<div id="f_3" class="">
+			<p align="center">
+				<b><font size="3" >Project Information</font></b>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_1" title="Project Title">Project Title:</label>
+				<input class="text" id="f_4_1" name="f_4_1" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_2" title="Project Manager">Project Manager:</label>
+				<input class="text searchtext" id="f_4_2" name="f_4_2" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_2');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_3" title="Main Client Contact">Main Client Contact:</label>
+				<input class="text" id="f_4_3" name="f_4_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_4" title="Client Contact Information">Client Contact Information:</label>
+				<input class="text" id="f_4_4" name="f_4_4" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_5" title="Estimated Start Date">Estimated Start Date:</label>
+				<input class="text  datepicker" id="f_4_5" name="f_4_5" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_5');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_6" title="Actual Start Date">Actual Start Date:</label>
+				<input class="text  datepicker" id="f_4_6" name="f_4_6" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_6');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_7" title="Estimated End Date">Estimated End Date:</label>
+				<input class="text  datepicker" id="f_4_7" name="f_4_7" readonly="readonly" type="text"  onclick="frmCalendarWidget('f_4_7');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_8" title="Actual End Date">Actual End Date:</label>
+				<input class="text  datepicker" id="f_4_8" name="f_4_8" readonly="readonly" type="text"  onclick="frmCalendarWidget('f_4_8');"/>
+			</p>
+
+			<p align="center"><b><font size="3" >Major MileStone</font></b></p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_9" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_9" name="f_4_9" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_9');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_10" title="Comments">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_10" name="f_4_10" rows="10"> </textarea>
+			</p>
+			
+			<p align="left"><u><b><font size="3" >Deliverables</font></b></u></p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_11" title="Project Brief Required">Project Brief Required:</label>
+				<input checked="checked" id="f_4_11" name="f_4_11" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_59" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_59" name="f_4_59" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_59');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_12" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_12" name="f_4_12" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_12');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_13" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_13" name="f_4_13" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+		   <p>
+				<label class="FormFieldLabel" for="f_4_14" title="Risk & Issue Log Required">Risk & Issue Log Required:</label>
+				<input checked="checked" id="f_4_14" name="f_4_14" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_60" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_60" name="f_4_60" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_60');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_15" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_15" name="f_4_15" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_15');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_16" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_16" name="f_4_16" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_17" title="Business Case Required">Business Case Required:</label>
+				<input checked="checked" id="f_4_17" name="f_4_17" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_61" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_61" name="f_4_61" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_61');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_18" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_18" name="f_4_18" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_18');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_19" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_19" name="f_4_19" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_20" title="Project Approach Required">Project Approach Required:</label>
+				<input checked="checked" id="f_4_20" name="f_4_20" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_62" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_62" name="f_4_62" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_62');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_21" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_21" name="f_4_21" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_21');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_22" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_22" name="f_4_22" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_23" title="Project Initiation Required">Project Initiation Document Required:</label>
+				<input checked="checked" id="f_4_23" name="f_4_23" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_63" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_63" name="f_4_63" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_63');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_24" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_24" name="f_4_24" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_24');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_25" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_25" name="f_4_25" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_26" title="High Level Project Plan Required">High Level Project Plan Required:</label>
+				<input checked="checked" id="f_4_26" name="f_4_26" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_64" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_64" name="f_4_64" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_64');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_27" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_27" name="f_4_27" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_27');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_28" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_28" name="f_4_28" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_29" title="Stage Plans Required">Stage Plans Required:</label>
+				<input checked="checked" id="f_4_29" name="f_4_29" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_65" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_65" name="f_4_65" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_65');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_30" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_30" name="f_4_30" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_30');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_31" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_31" name="f_4_31" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_32" title="Functional Requirements Required">Functional Requirements Required:</label>
+				<input checked="checked" id="f_4_32" name="f_4_32" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_66" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_66" name="f_4_66" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_66');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_33" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_33" name="f_4_33" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_33');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_34" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_34" name="f_4_34" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_35" title="Interface Requirements Required">Interface Requirements Required:</label>
+				<input checked="checked" id="f_4_35" name="f_4_35" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_67" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_67" name="f_4_67" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_67');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_36" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_36" name="f_4_36" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_36');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_37" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_37" name="f_4_37" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_38" title="Reporting Requirements Required">Reporting Requirements Required:</label>
+				<input checked="checked" id="f_4_38" name="f_4_38" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_68" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_68" name="f_4_68" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_68');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_39" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_39" name="f_4_39" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_39');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_40" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_40" name="f_4_40" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_41" title="MI Requirements Required">MI Requirements Required:</label>
+				<input checked="checked" id="f_4_41" name="f_4_41" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_69" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_69" name="f_4_69" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_69');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_42" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_42" name="f_4_42" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_42');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_43" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_43" name="f_4_43" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_44" title="Technical Requirements Required">Technical Requirements Required:</label>
+				<input checked="checked" id="f_4_44" name="f_4_44" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_70" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_70" name="f_4_70" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_70');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_45" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_45" name="f_4_45" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_45');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_46" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_46" name="f_4_46" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_47" title="Project Weekly Report Required">Project Weekly Report Required:</label>
+				<input checked="checked" id="f_4_47" name="f_4_47" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_71" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_71" name="f_4_71" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_71');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_48" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_48" name="f_4_48" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_48');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_49" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_49" name="f_4_49" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_50" title="Project Monthly Steering Committee Report" >PMSC Report Required:</label>
+				<input checked="checked" id="f_4_50" name="f_4_50" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_72" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_72" name="f_4_72" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_72');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_51" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_51" name="f_4_51" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_51');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_52" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_52" name="f_4_52" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_53" title="Change Control Process Required">Change Control Process Required:</label>
+				<input checked="checked" id="f_4_53" name="f_4_53" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_73" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_73" name="f_4_73" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_73');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_54" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_54" name="f_4_54" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_54');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_55" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_55" name="f_4_55" rows="10"> </textarea>
+			</p>
+			<!-- </div> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_56" title="Change Control Log Required">Change Control Log Required:</label>
+				<input checked="checked" id="f_4_56" name="f_4_56" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_74" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_74" name="f_4_74" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_74');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_57" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_57" name="f_4_57" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_57');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_58" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_58" name="f_4_58" rows="10"> </textarea>
+			</p>
+			<!-- </div>  -->
+			<p>
+				<label class="FormFieldLabel" for="f_4_75" title="Lesson Learned Report Required">Lesson Learned Report Required:</label>
+				<input checked="checked" id="f_4_75" name="f_4_75" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_76" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_76" name="f_4_76" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_76');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_77" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_77" name="f_4_77" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_77');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_78" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_78" name="f_4_78" rows="10"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_79" title="End of Project Review Required">End of Project Review Required:</label>
+				<input checked="checked" id="f_4_79" name="f_4_79" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_80" title="Reference Form">Reference Form:</label>
+				<input class="text searchtext" id="f_4_80" name="f_4_80" readonly="readonly" type="text" onclick="frmFindItemAjax('f_4_80');"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_4_81" title="Date">Date:</label>
+				<input class="text  datepicker" id="f_4_81" name="f_4_81" readonly="readonly" type="text" onclick="frmCalendarWidget('f_4_81');"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_4_82" title="Comment">Comment:</label>
+				<textarea class="text" cols="50" id="f_4_82" name="f_4_82" rows="10"> </textarea>
+			</p>
+			
+		</div>
+	</div>
+</div>
+

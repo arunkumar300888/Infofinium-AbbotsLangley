@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="FormTrail" table="form_trail">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	<!-- 	<many-to-one name="discipline" class="uk.co.jmr.sdp.domain.Discipline"
+			column="discipline_id" lazy="false" not-null="true" /> -->
+		<many-to-one name="userForm" class="uk.co.jmr.webforms.db.pojo.UserForms"
+			column="user_form_id" lazy="false"  />
+		<many-to-one name="user" class="uk.co.jmr.sdp.domain.User"
+			column="performed_by" lazy="false"  />	
+		<property name="formStatus" column="form_status" />
+		<property name="performedOn" column="performed_on" />
+		<property name="action" column="action" />
+		<property name="details" column="details" />
+		<property name="reason" column="action_reason" />
+		
+        
+                
+ 
+	</class>
+</hibernate-mapping>

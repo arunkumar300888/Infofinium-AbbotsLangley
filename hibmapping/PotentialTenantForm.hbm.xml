@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="PotentialTenantForm" table="potential_tenant_form">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+		<property name="potentialTenantTitle" column="potentialtenanttitle" />
+		<property name="title" column="title" />
+		<property name="firstName" column="firstname" />
+		<property name="lastName" column="lastname" />
+		<property name="landLineNumber" column="landlinenumber" />
+		<property name="mobileNumber" column="mobilenumber"/>
+		<property name="emailAddress" column="emailaddress"></property>
+		<property name="nationalInsuranceNumber" column="nationalinsurancenumber"/>
+		<property name="currentAddress" column="currentaddress"></property>
+		<property name="type" column="type" />
+        <property name="numberOfBedRooms" column="numberofbedRooms"/>
+        <property name="garden" column="garden" />
+        <property name="offRoadParking" column="offroadparking"  />
+        <property name="garage" column="garage"  />
+        <property name="other" column="other" />
+        <property name="createdOn"  column="createdon"/>
+		<property name="updatedOn"  column="updatedOn"/>
+		<property name="updatedDetails"  column="updateddetails"/>
+		<many-to-one name="createdBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="createdby"  />
+				</many-to-one>
+		<many-to-one name="updatedBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="updatedby"  />
+				</many-to-one>
+		<property name="status"  column="status"/>
+       
+ 
+	</class>
+</hibernate-mapping>

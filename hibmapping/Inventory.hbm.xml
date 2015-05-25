@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="Inventory" table="inventory">
+
+		<id name="id" unsaved-value="-1"  >
+			<generator class="native"></generator>
+		</id>
+	
+		<property name="tenantName" column="tenantname" />
+		<property name="tenantAddress" column="tenantaddress" />
+		<property name="room" column="room" />
+		
+		<property name="everythingOk" column="everythingok" />
+		<property name="notes" column="notes" />
+		
+		<property name="inventoryTitle"  column="inventorytitle"/>
+		<many-to-one name="propertyDetailsForm" class="uk.co.jmr.sdp.domain.PropertyDetailsForm" lazy="false">
+					<column name="property_id"  />
+				</many-to-one>
+		
+		
+		<property name="createdOn"  column="createdon"/>
+		<property name="updatedOn"  column="updatedOn"/>
+		<property name="updatedDetails"  column="updateddetails"/>
+		<many-to-one name="createdBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="createdby"  />
+				</many-to-one>
+		<many-to-one name="updatedBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="updatedby"  />
+				</many-to-one>
+		<property name="status"  column="status"/>
+	</class>
+</hibernate-mapping>

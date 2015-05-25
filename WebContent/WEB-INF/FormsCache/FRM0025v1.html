@@ -1,0 +1,134 @@
+<script type="text/javascript">
+//<![CDATA[
+	
+     $(function(){
+		$("#FORM_ButtonBar").hide();
+	});       
+           
+	var formTabs2 =
+	[
+		{vmask:[0],
+		rmask:[0],
+		fields:[ 													 
+			{name:"f_16_1",     id:"f_16_1",    type: '',  isRequired: false, ownedBy: null},
+			{name:"f_16_2",     id:"f_16_2",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_3",     id:"f_16_3",    type: '',  isRequired: false, ownedBy: null},
+			{name:"f_16_4",     id:"f_16_4",    type: '',  isRequired: false, ownedBy: null},
+			{name:"f_16_5",     id:"f_16_5",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_6",     id:"f_16_6",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_7",     id:"f_16_7",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_8",     id:"f_16_8",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_9",     id:"f_16_9",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_10",     id:"f_16_10",    type: '',  isRequired: false, ownedBy: null},
+			{name:"f_16_11",     id:"f_16_11",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_12",     id:"f_16_12",    type: '',  isRequired: false, ownedBy: null},
+			{name:"f_16_13",     id:"f_16_13",    type: '',  isRequired: false, ownedBy: null},
+			{name:"f_16_14",     id:"f_16_14",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_15",     id:"f_16_15",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_16",     id:"f_16_16",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_16_17",     id:"f_16_17",	  type: '',  isRequired: false,  ownedBy: null}]}
+				
+	];
+
+  function _formValidationCheck()
+		{
+			var rv = true;
+			var fFrom = document.getElementById("f_16_6");
+			var from = fFrom.value;
+			from = trim(from);
+			if(from != null)
+			{
+				markFieldLabelValid(fFrom, rv)
+			}
+			
+			return rv;
+		} 
+	
+	_form_init(formTabs2);
+	
+	
+	
+	
+
+//]]>
+</script>		
+
+
+<div id="FORM_Form" style="width: 650px;">
+	<div id="FRM006_tab_0" >
+		<!--Tab : FRM001_tab_0 -->
+		<div id="f_16" class="">
+			<p align="center">
+				<b><font size="3" >Supplier Order Form</font></b>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_16_1" title="Date">Date:</label>
+				<input class="text" id="f_16_1" name="f_16_1" type="text"/>
+			</p>
+			<br/>
+			<table class="display">
+					<thead>
+						<tr>
+							<th>Product Code</th>
+							<th>Quantity</th>
+							<th>Shipping Address</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr class="odd">
+							<td><input class="text" id="f_16_2" name="f_16_2"
+								type="text" maxlength="10" /></td>
+							<td><input class="text" id="f_16_3" name="f_16_3"
+								type="text" maxlength="10" /></td>
+							<td><input class="text" id="f_16_4" name="f_16_4"
+								type="text" maxlength="10" /></td>
+						</tr>
+						<tr class="even">
+							<td><input class="text" id="f_16_5" name="f_16_5"
+								type="text" maxlength="10" /></td>
+							<td><input class="text" id="f_16_6" name="f_16_6"
+								type="text" maxlength="10" /></td>
+							<td><input class="text" id="f_16_7" name="f_16_7"
+								type="text" maxlength="10" /></td>
+						</tr>
+					</tbody>
+				</table>
+			<br/>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_16_8" title="Total">Total:</label>
+				<input class="text" id="f_16_8" name="f_16_8" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_16_9" title="Total">Total:</label>
+				<input class="text" id="f_16_9" name="f_16_9" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_16_10" title="Payment Details">Payment Details:</label>				
+				<textarea class="text" cols="50" id="f_16_10" name="f_16_10" rows="3"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_16_11" title="Total">Total:</label>
+				<input class="text" id="f_16_11" name="f_16_11" type="text" maxlength="50"/>
+			</p>
+			<br/>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_16_12" title="Upload Invoice">Link to Invoice:</label>
+				<input class="text" id="f_16_12" name="f_16_12" type="text" maxlength="50"/>
+			</p>
+			
+			<p>	
+				<label class="FormFieldLabelRequired" for="f_16_13" title="Date Items Received">Date Items Received:</label>
+				<input class="text" id="f_16_13" name="f_16_13" type="text" maxlength="50"/>
+			</p>
+			
+			
+						
+		</div>
+	</div>
+</div>

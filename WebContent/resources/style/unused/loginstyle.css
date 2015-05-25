@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a img {
+	border: none;
+}
+
+a {
+	color: white;
+}
+
+body {
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	font: normal 12px Arial;
+	color: #FFF;
+	overflow: hidden;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+input[type="text"] {
+	width: 150px;
+	height: 22px;
+	line-height: 22px;
+	border: solid 1px #341e69;
+}
+
+input[type="password"] {
+	width: 150px;
+	height: 22px;
+	border: solid 1px #341e69;
+}
+
+.text {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+.loginpage {
+	margin: 190px auto;
+	width: 513px;
+}
+
+.login_logo {
+	margin: 0 0 20px 100px;
+	height: 50px;
+	width: 293px;
+	text-align: center; /*border-bottom:dashed 1px #333;*/
+}
+
+.loginbg {
+	background: url(../images/loginbg.png) no-repeat;
+	margin: 0 auto;
+	height: 223px;
+	width: 315px;
+}
+
+.rememberme {
+	line-height: 20px;
+	font-size: 8pt;
+	color: #ffffff;
+	float: left;
+}
+
+#forgot-password {
+	text-align: right;
+	padding-right: 25px;
+}
+
+.loginlink {
+	padding-top: 10px;
+}
+
+.loginlink,.loginlink a {
+	color: #2361ff;
+}
+
+.loginlink a:hover {
+	color: #211049;
+	text-decoration: none;
+}

@@ -1,0 +1,146 @@
+
+<script type="text/javascript">
+//<![CDATA[
+	
+  /*    $(function(){
+		$("#FORM_ButtonBar").hide();
+	}); */       
+           
+	var formTabs2 =
+	[
+		{vmask:[0],
+		rmask:[0],
+		fields:[ 													 
+			{name:"f_9_1",     id:"f_9_1",    type: 'S',  isRequired: false,  ownedBy: null},
+			{name:"f_9_2",     id:"f_9_2",	  type: 'S',  isRequired: false,  ownedBy: null},
+			{name:"f_9_3",     id:"f_9_3",    type: 'S',  isRequired: false,  ownedBy: null},
+			{name:"f_9_4",     id:"f_9_4",    type: 'I',  isRequired: false,  ownedBy: null},
+			{name:"f_9_5",     id:"f_9_5",	  type: 'I',  isRequired: false,  ownedBy: null},
+			{name:"f_9_6",     id:"f_9_6",	  type: 'S',  isRequired: false,  ownedBy: null},
+			{name:"f_9_7",     id:"f_9_7",	  type: 'S',  isRequired: false,  ownedBy: null},
+			{name:"f_9_8",     id:"f_9_8",	  type: 'S',  isRequired: false,  ownedBy: null},
+		 	{name:"f_9_9",     id:"f_9_9",	  type: '',   isRequired: false,  ownedBy: null},  
+			{name:"f_9_10",    id:"f_9_10",   type: 'I',   isRequired: false,  ownedBy: null},
+			{name:"f_9_11",    id:"f_9_11r0", type: '',   isRequired: false,  ownedBy: null},
+			{name:"f_9_11",    id:"f_9_11r1", type: '',   isRequired: false,  ownedBy: null},
+			{name:"f_9_12",    id:"f_9_12",	  type: 'S',   isRequired: false,  ownedBy: null},
+			{name:"f_9_13",    id:"f_9_13",	  type: 'S',   isRequired: false,  ownedBy: null},
+			{name:"f_9_14",    id:"f_9_14",	  type: 'S',   isRequired: false,  ownedBy: null}
+			]}
+				
+	];
+
+   function _formValidationCheck()
+		{
+			var rv = true;
+			var fFrom = document.getElementById("f_9_6");
+			var from = fFrom.value;
+			from = trim(from);
+			if(from != null)
+			{
+				markFieldLabelValid(fFrom, rv)
+			}
+			
+			return rv;
+		}  
+	
+	 _form_init(formTabs2); 
+	
+	
+	
+	
+
+//]]>
+</script>		
+
+
+<div id="FORM_Form" style="width: 650px;">
+	<div id="FRM003_tab_0" >
+		<!--Tab : FRM001_tab_0 -->
+		<div id="f_7" class="">
+		
+			<p align="left">
+				<u><b><font size="3" >Potential Tenant Form</font></b></u>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_9_1" title="Title">Title:</label>
+				<input class="text" id="f_9_1" name="f_9_1" type="text" maxlength="50"/><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_2" title="First Name">First Name:</label>
+				<input class="text" id="f_9_2" name="f_9_2" type="text" maxlength="50"/><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_3" title="Last Name">Last Name:</label>
+				<input class="text" id="f_9_3" name="f_9_3" type="text" maxlength="50"/><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_4" title="LandLine Number">Landline Number:</label>
+				<input class="text" id="f_9_4" name="f_9_4" type="text" maxlength="50"/><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_5" title="Mobile Number">Mobile Number:</label>
+				<input class="text" id="f_9_5" name="f_9_5" type="text" maxlength="50"/><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_6" title="Email Address">Email Address:</label>
+				<input class="text" id="f_9_6" name="f_9_6" type="text" maxlength="50"/><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_7" title="National Insurance Number">National Insurance Number:</label>
+				<input class="text" id="f_9_7" name="f_9_7" type="text" maxlength="50"/><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_8" title="Current Address">Current Address:</label>
+				<textarea class="text" cols="30" id="f_9_8" name="f_9_8" rows="5"> </textarea>
+				
+			</p>
+	
+			
+			<p align="left">
+				<u><b><font size="3" >Tenant Requirements</font></b></u>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_9_9" title="Type">Type:</label>
+				<select class="text" id="f_9_9">
+				<option value="-1">Select</option> 
+				<option value="flat">Flat</option>
+				<option value="semiDetachedHouse">Semi Detached House</option>
+				<option value="detachedHouse">Detached House</option>
+				<option value="Bunglow">Bungalow</option>
+				</select><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_10" title="Number Of Bedrooms">Number of Bedrooms:</label>
+				<input class="text" id="f_9_10" name="f_9_10" type="text" maxlength="50"/><br/><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabel" for="f_9_11r0" title="Garden">Garden:</label>
+				<input checked="checked" id="f_9_11r0" name="f_9_11" type="radio" value="Yes"/>
+				<label class="radio" for="f_9_11r0">Yes</label>
+				<input id="f_9_11r1" name="f_9_11" type="radio" value="No"/>				
+				<label class="radio" for="f_9_11r1">No</label>
+				
+			<br/><br/>
+			
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_9_12" title="Off Road Parking">Off Road Parking:</label>
+				<textarea class="text" cols="30" id="f_9_12" name="f_9_12" rows="5"> </textarea><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_13" title="Garage">Garage:</label>
+				<textarea class="text" cols="30" id="f_9_13" name="f_9_13" rows="5"> </textarea><br/>
+				</p>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_9_14" title="Other">Other:</label>
+				<textarea class="text" cols="30" id="f_9_14" name="f_9_14" rows="5"> </textarea>
+				
+				
+			</p>
+					
+		</div>
+	</div>
+</div>
+

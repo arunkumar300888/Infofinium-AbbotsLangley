@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="ReviewNote" table="review_notes">
+		<id name="id" unsaved-value="-1">
+			<generator class="native"></generator>
+                </id>
+                <property name="reviewDate" column="review_date"></property>
+                <property name="comments" column="comments"></property>
+                <!-- <many-to-one name="document" class="uk.co.jmr.sdp.domain.Document" 
+                                column="document_id" lazy="false" not-null="true"></many-to-one> -->
+                <many-to-one name="wfCase" class="com.ardhika.wfar.WfCase" 
+                                column="case_id" lazy="false" not-null="true"></many-to-one>
+                <many-to-one name="reviewer" class="uk.co.jmr.sdp.domain.User"
+                                column="reviewer_id" lazy="false" not-null="true"></many-to-one>                        
+        </class>
+</hibernate-mapping>

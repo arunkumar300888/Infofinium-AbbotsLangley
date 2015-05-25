@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+<class name="SecurityGroupCombo" table="security_group_combo">
+	<id name="id" unsaved-value="-1">
+			<generator class="native" />
+	</id>
+	
+	<many-to-one name="securityGroup" class="uk.co.jmr.sdp.domain.SecurityGroup" column="security_group_id" lazy="false"/>
+	<many-to-one name="doctype" class="uk.co.jmr.sdp.domain.Doctype" column="doctype_id" lazy="false"/>
+	<many-to-one name="attributeValue1" class="uk.co.jmr.sdp.domain.dt.AttributeValue" column="attr_value1" lazy="false"/>
+	<many-to-one name="attributeValue2" class="uk.co.jmr.sdp.domain.dt.AttributeValue" column="attr_value2" lazy="false"/>
+	<many-to-one name="attributeValue3" class="uk.co.jmr.sdp.domain.dt.AttributeValue" column="attr_value3" lazy="false"/>
+	<!-- <many-to-one name="attributeValue4" class="uk.co.jmr.sdp.domain.dt.AttributeValue" column="attr_value4" lazy="false"/> -->
+
+	<property name="defaultSg" column="default_sg"></property>
+
+</class>
+</hibernate-mapping>

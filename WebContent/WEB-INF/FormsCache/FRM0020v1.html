@@ -1,0 +1,228 @@
+<script type="text/javascript">
+//<![CDATA[
+	
+     $(function(){
+		$("#FORM_ButtonBar").hide();
+	});       
+           
+	var formTabs2 =
+	[
+		{vmask:[0],
+		rmask:[0],
+		fields:[ 													 
+			{name:"f_6_1",     id:"f_6_1",    type: '',  isRequired: true, ownedBy: null},
+			{name:"f_6_2",     id:"f_6_2",	  type: 'S',  isRequired: true,  ownedBy: null},
+			{name:"f_6_3",     id:"f_6_3",    type: '',  isRequired: true, ownedBy: null},
+			{name:"f_6_4",     id:"f_6_4",    type: '',  isRequired: true, ownedBy: null},
+			{name:"f_6_5",     id:"f_6_5",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_6_6",     id:"f_6_6",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_6_7",     id:"f_6_7",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_6_8",     id:"f_6_8",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_6_9",     id:"f_6_9",	  type: '',  isRequired: true,  ownedBy: null}]}
+				
+	];
+
+  function _formValidationCheck()
+		{
+			var rv = true;
+			var fFrom = document.getElementById("f_6_6");
+			var from = fFrom.value;
+			from = trim(from);
+			if(from != null)
+			{
+				markFieldLabelValid(fFrom, rv)
+			}
+			
+			return rv;
+		} 
+	
+	_form_init(formTabs2);
+	
+	
+	
+	
+
+//]]>
+</script>		
+
+
+<div id="FORM_Form" style="width: 650px;">
+	<div id="FRM003_tab_0" >
+		<!--Tab : FRM001_tab_0 -->
+		<div id="f_17" class="">
+			<p align="center">
+				<b><font size="3" >Custom Product Order Form</font></b>
+			</p>
+			<br/>
+			<b><font size="3" >Custom Details </font></b>
+			<br/><br/>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_2" title="Title">Title:</label>
+				<input class="text" id="f_17_2" name="f_17_2" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="First Name">First Name:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_4" title="Last Name">Last Name:</label>
+				<input class="text" id="f_17_4" name="f_17_4" type="text" maxlength="10"/>
+			</p>
+			
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_6" title="Contact Number">Contact Number:</label>
+				<input class="text" id="f_17_6" name="f_17_6" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_7" title="Mobile Number">Mobile Number:</label>
+				<input class="text" id="f_17_7" name="f_17_7" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Email Address">Email Address:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Billing Address">Billing Address:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Delivery Address">Delivery Address:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Hand Delivered">Hand Delivered?</label>
+				<input checked="checked" id="f_16_1" name="f_16_1" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Customer Notes">Customer Notes:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title=" Method of Payment">Preferred Method of Payment</label>
+				<select class="text" id="f_13_5">
+				<option value="Cash">Cash</option>
+				<option value="Card">Card</option>
+				<option value="Paypal">Paypal</option>
+				<option value="Other">Other</option> 
+				</select>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title=" Payment Details">Payment Details:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			<br/>
+				<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title=" Product Information">Product Information:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Colours">Colours:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+						
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Pictures">Product Information:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="file" />
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Budget">Budget:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Date Required">Date Item Required?</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Wedding Date">Wedding/Event Date:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			<br/>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Budget">Customer Signature:</label>
+				<input checked="checked" id="f_16_1" name="f_16_1" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Date Signed">Date Signed:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			<br/>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Price">Price:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Money Reeceived Date">Money Received Date:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Delivery Address for Rai Jwellery">Delivery Address for Rai Jwellery:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			<br/>
+			<b><font size="3" >Amendments or Modifications</font></b>
+			<br/><br/>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Product Information">Product information:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="colours">colours:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Pictures">Pictures:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Date Item Required">Date Item Required?</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<br/>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Budget">Customer Signature:</label>
+				<input checked="checked" id="f_16_1" name="f_16_1" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Date Signed">Date Signed:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			<br/>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="New Payment Details">New Payment Details:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_17_3" title="Additional Cost">Additional Cost:</label>
+				<input class="text" id="f_17_3" name="f_17_3" type="text" maxlength="10"/>
+			</p>
+			<br/><br/>
+			<input type="button" class="download" value="Generate Invoice"/>
+			
+		</div>
+	</div>
+</div>

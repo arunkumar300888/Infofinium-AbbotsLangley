@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="CheckingOutRooms" table="checkingoutrooms">
+		<id name="id" unsaved-value="-1">
+		<generator class="native" />
+		</id>
+		
+		<many-to-one name="checkingOutForm" class="uk.co.jmr.sdp.domain.CheckingOutForm"
+			column="checkingout_id" lazy="false"  />
+		<property name="roomId" column="roomid" />
+		<property name="roomName" column="roomname"></property>
+		
+		</class>
+		</hibernate-mapping>

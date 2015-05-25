@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="Document" table="documents">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	<!-- 	<many-to-one name="discipline" class="uk.co.jmr.sdp.domain.Discipline"
+			column="discipline_id" lazy="false" not-null="true" /> -->
+		<many-to-one name="doctype" class="uk.co.jmr.sdp.domain.Doctype"
+			column="doctype_id" lazy="false"  />
+		<property name="targetDate" column="target_date" />
+		<property name="filePath" column="file_path" />
+		<property name="ebNo" column="eb_number" />
+		<property name="author" column="author" />
+		<property name="name" column="document_name"/>
+		<property name="keywords" column="keywords"></property>
+		<property name="caseId" column="case_id"/>
+		<property name="locked" column="locked"></property>
+		<property name="dateCreated" column="created_date" />
+        <property name="wip" column="wip"/>
+        <property name="revisionable" column="revisionable" type="boolean" />
+        <property name="abandon" column="abandon" type="boolean" />
+        <property name="reassignOwner" column="reassign_owner" type="string" />
+        <property name="deletionReason" column="deletion_reason" type="string" />
+        <property name="userFormId" column="user_form_id" type="string"/>
+        <property name="discriminator" column="discriminator" type="character"/>
+        
+                <many-to-one name="securityGroup" class="uk.co.jmr.sdp.domain.SecurityGroup" column="security_group_id" lazy="false" not-null="false" />
+                        
+		<set name="documentAttributes" table="document_attributes"  lazy="false" cascade="all">
+			<key>
+				<column name="document_id" not-null="true" />
+			</key>
+			<one-to-many class="uk.co.jmr.sdp.domain.DocumentAttribute" />
+		</set>
+		<set name="documentReference" table="document_reference" lazy="false"
+			cascade="all">
+			<key>
+				<column name="document_id" not-null="true" />
+			</key>
+			<one-to-many class="uk.co.jmr.sdp.domain.DocumentReference" />
+		</set>
+ 
+	</class>
+</hibernate-mapping>

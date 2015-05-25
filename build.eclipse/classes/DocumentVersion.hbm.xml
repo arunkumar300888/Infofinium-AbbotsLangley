@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="DocumentVersion" table="document_by_version">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	<!-- 	<many-to-one name="discipline" class="uk.co.jmr.sdp.domain.Discipline"
+			column="discipline_id" lazy="false" not-null="true" /> -->
+		
+		
+		<property name="documentId" column="document_id" />
+		<property name="filePath" column="file_path" />
+		<property name="documentName" column="document_name" />
+		
+        
+                
+		
+ 
+	</class>
+</hibernate-mapping>

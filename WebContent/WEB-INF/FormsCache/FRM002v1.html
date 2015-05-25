@@ -1,0 +1,143 @@
+<script type="text/javascript">
+//<![CDATA[
+	var formTabs1 =
+	[
+		{vmask:[0],
+		rmask:[0],
+		fields:[ 													 
+	        {name:"f_3_1",     id:"f_3_1r0",   type: '',  isRequired: false, ownedBy: null},
+			{name:"f_3_1",     id:"f_3_1r1",   type: '',  isRequired: false, ownedBy: null},
+        	{name:"f_3_2",     id:"f_3_2",	   type: 'S', isRequired: true,  ownedBy: null},
+			{name:"f_3_3",     id:"f_3_3",	   type: 'S', isRequired: true,  ownedBy: null},
+			{name:"f_3_4",     id:"f_3_4",     type: 'S', isRequired: true,  ownedBy: null},
+			{name:"f_3_5",     id:"f_3_5",     type: 'I', isRequired: true,  ownedBy: null},
+			{name:"f_3_6",     id:"f_3_6",     type: 'I', isRequired: true,  ownedBy: null},
+			{name:"f_3_7",     id:"f_3_7",	   type: 'S', isRequired: true,  ownedBy: null},
+			{name:"f_3_8",     id:"f_3_8",	   type: '',  isRequired: false, ownedBy: null}, 
+			{name:"f_3_9",     id:"f_3_9",     type: 'S', isRequired: false, ownedBy: "f_3_8"},
+			{name:"f_3_9_15",  id:"f_3_9_15",  type: 'S', isRequired: false, ownedBy: "f_3_9"},
+			{name:"f_3_9_16",  id:"f_3_9_16",  type: 'S', isRequired: false, ownedBy: "f_3_9"},
+			{name:"f_3_9_17",  id:"f_3_9_17",  type: 'I', isRequired: false, ownedBy: "f_3_9"},
+			{name:"f_3_9_18",  id:"f_3_9_18",  type: 'I', isRequired: false, ownedBy: "f_3_9"},
+			{name:"f_3_9_19",  id:"f_3_9_19",  type: 'S', isRequired: false, ownedBy: "f_3_9"},
+			{name:"f_3_10",    id:"f_3_10",	   type: 'T',  isRequired: true, ownedBy:  null},
+			{name:"f_3_11",    id:"f_3_11",	   type: 'S', isRequired: true,  ownedBy:  null},
+			{name:"f_3_12",    id:"f_3_12",	   type: 'S', isRequired: true,  ownedBy:  null},
+			{name:"f_3_13",    id:"f_3_13",	   type: '',  isRequired: false, ownedBy:  null}, 
+			{name:"f_3_14",    id:"f_3_14",    type: 'S', isRequired: false, ownedBy:  "f_3_13"}]}	
+	];
+	
+ function _formValidationCheck()
+	{
+		var rv = true;
+		var fFrom = document.getElementById("f_3_10");
+		var from = fFrom.value;
+		from = trim(from);
+		if(from != null)
+		{
+			markFieldLabelValid(fFrom, rv)
+		}
+		
+		return rv;
+	}
+	
+	_form_init(formTabs1);
+
+//]]>
+</script>		
+
+
+<div id="FORM_Form" style="width: 700px;">
+	<div id="FRM002_tab_0" >
+		<!--Tab : FRM001_tab_0 -->
+		<div id="f_2" class="">
+			<p>
+				<label class="FormFieldLabel" for="f_3_1r0" title="Request for">Request for:</label>
+				<input checked="checked" id="f_3_1r0" name="f_3_1" type="radio" value="Own accident"/>
+				<label class="radio" for="f_3_1r0">Are you reporting on your own behalf</label>
+				<input id="f_3_1r1" name="f_3_1"  type="radio" value="Somebody else's accident"/>				
+				<label class="radio" for="f_3_1r1">or on another persons behalf</label>
+			</p>
+			
+			<p align="center"><b><font size="3" >Injured Person's details</font></b></p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_2" title="Title">Type of injury:<font color="red">*</font></label>
+				<input class="text" id="f_3_2" name="f_3_2" type="text" maxlength="50"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_3" title="Surname">Surname:<font color="red">*</font></label>
+				<input class="text" id="f_3_3" name="f_3_3" type="text" maxlength="50"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_4" title="First Name">First Name:<font color="red">*</font></label>
+				<input class="text" id="f_3_4" name="f_3_4"  type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_5" title="Contact Number">Contact Number:<font color="red">*</font></label>
+				<input class="text" id="f_3_5" name="f_3_5" type="text" maxlength="11"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_6" title="Employee Number">Employee Number:<font color="red">*</font></label>
+				<input class="text" id="f_3_6" name="f_3_6" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_3_7" title="Address of incident">Contact address:<font color="red">*</font></label>
+				<textarea class="text" cols="30" id="f_3_7" name="f_3_7" rows="5"> </textarea>
+			</p>
+			<p>
+				<label class="FormFieldLabel" for="f_3_8" title="Required">Reporting person details Required:</label>
+				<input checked="checked" id="f_3_8" name="f_3_8" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<div class="Form" id="f_3_9">
+			<p align="center"><b><font size="3" >Reporting Person's details</font></b></p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_9_15" title="Surname">Surname:<font color="red">*</font></label>
+				<input class="text" id="f_3_9_15" name="f_3_9_15" type="text" maxlength="50"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_9_16" title="First Name">First Name:<font color="red">*</font></label>
+				<input class="text" id="f_3_9_16" name="f_3_9_16"  type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_9_17" title="Contact Number">Contact Number:<font color="red">*</font></label>
+				<input class="text" id="f_3_9_17" name="f_3_9_17" type="text" maxlength="11"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_9_18" title="Employee Number">Employee Number:<font color="red">*</font></label>
+				<input class="text" id="f_3_9_18" name="f_3_9_18" type="text" maxlength="10"/>
+			</p>
+			<p>
+				<label class="FormFieldLabel" for="f_3_9_19" title="Contact Address">Contact address:<font color="red">*</font></label>
+				<textarea class="text" cols="30" id="f_3_9_19" name="f_3_9_19" rows="5"> </textarea>
+			</p>
+			</div>
+			
+			<p align="center"><b><font size="3" >About the Incident</font></b></p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_3_10" title="Start">Date & Time:<font color="red">*</font></label>
+				<input class="text  datepicker" id="f_3_10" name="f_3_10" readonly="readonly" type="text" onclick="frmCalendarWidget('f_3_10');" />
+			</p>
+			<p>
+				<label class="FormFieldLabel" for="f_3_11" title="Address">Address:<font color="red">*</font></label>
+				<textarea class="text" cols="30" id="f_3_11" name="f_3_11" rows="5"> </textarea>
+			</p>
+			<p>
+				<label class="FormFieldLabel" for="f_3_12" title="Incident Happen">How did the Incident Happen:<font color="red">*</font></label>
+				<textarea class="text" cols="30" id="f_3_12" name="f_3_12" rows="5"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_3_13" title="Required">Immediate First Aid Applied:</label>
+				<input checked="checked" id="f_3_13" name="f_3_13" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			<p>
+				<label class="FormFieldLabel" for="f_3_14" title="First Aid Applied">Details:<font color="red">*</font></label>
+				<textarea class="text" cols="30" id="f_3_14" name="f_3_14" rows="5"> </textarea>
+			</p>
+	</div>
+</div>
+</div>

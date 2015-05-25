@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:component-scan base-package="com.ardhika.wfar" />
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url"
+			value="jdbc:mysql://192.168.1.95:3306/infofinium?autoreconnect=true">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="root"></property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="mappingResources">
+			<list>
+			<value>WfAction.hbm.xml</value>
+			<value>WfModel.hbm.xml</value>
+			<value>WfNode.hbm.xml</value>
+			<value>WfCase.hbm.xml</value>
+			<value>WfAttribute.hbm.xml</value>
+			<value>WfStep.hbm.xml</value>
+			<value>Doctype.hbm.xml</value>
+			
+				<!-- <value>wfaction.hbm.xml</value>
+				<value>wfmodel.hbm.xml</value>
+				<value>wfnode.hbm.xml</value>
+				<value>Wfcase.hbm.xml</value>
+				<value>Wfattribute.hbm.xml</value>
+				<value>Wfstep.hbm.xml</value>
+				<value>Doctype.hbm.xml</value> -->
+				<!-- <value>DtAttribute.hbm.xml</value>
+				<value>DtAttributeValue.hbm.xml</value>
+				<value>DtTemplate.hbm.xml</value> -->
+				
+				<value>ArrayItems.hbm.xml</value>
+				<value>Arrays.hbm.xml</value>
+				<value>FieldTypes.hbm.xml</value>
+				<value>Fields.hbm.xml</value>
+				<value>FormData.hbm.xml</value>
+				<value>FormDefs.hbm.xml</value>
+				<value>FormFieldMap.hbm.xml</value>
+				<value>Forms.hbm.xml</value>
+				<value>HtmlFormDef.hbm.xml</value>
+				<value>UserForms.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+</beans>

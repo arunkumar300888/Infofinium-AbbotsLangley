@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="SecurityGroupForm" table="security_group_form">
+
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<many-to-one name="securityGroup" class="uk.co.jmr.sdp.domain.SecurityGroup"
+			column="security_group_id" lazy="false" not-null="true" />
+
+		<many-to-one name="formDefs" class="uk.co.jmr.webforms.db.pojo.FormDefs"
+			column="form_def_id" lazy="false" not-null="true" />
+
+	</class>
+</hibernate-mapping>

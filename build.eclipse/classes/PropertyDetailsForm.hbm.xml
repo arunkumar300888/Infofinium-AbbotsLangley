@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="PropertyDetailsForm" table="property_details_form">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+
+<property name="client"  column="client"/>
+<property name="firstName"  column="firstName"/>
+<property name="lastName"  column="lastName"/>
+<property name="landlineNumber"  column="landlineNumber"/>
+<property name="mobileNumber"  column="mobileNumber"/>
+<property name="emailAddress"  column="emailAddress"/>
+<property name="address"  column="address"/>
+
+<property name="accountNumber"  column="accountNumber"/>
+<property name="accountHoldersName"  column="accountHoldersName"/>
+<property name="sortCode"  column="sortCode"/>
+<property name="vatDetails"  column="vatDetails"/>
+<property name="referencesForPayment"  column="referenceForPayment"/>
+<property name="propertyAddressLine1"  column="propertyAddressLine1"/>
+<property name="propertyAddressLine2"  column="propertyAddressLine2"/>
+<property name="town"  column="town"/>
+<property name="cityCountry"  column="city_country"/>
+<property name="propertyPostCode"  column="propertyPostCode"/>
+<property name="propertyType"  column="propertyType"/>
+<property name="propertyDescription"  column="propertyDescription"/>
+<property name="houseMeasurements"  column="houseMeasurements"/>
+<property name="gasMeterLocation"  column="gasMeterLocation"/>
+<property name="electricMeterLocation"  column="electricMeterLocation"/>
+<property name="waterMeterLocation"  column="waterMeterLocation"/>
+<property name="dateOfPerchase"  column="dateOfPurchase"/>
+<property name="priceOfPurchase"  column="priceOfPurchase"/>
+<property name="estimatedValue"  column="estimatedValue"/>
+<property name="asOfDate"  column="asOfDate"/>
+<property name="annualRent"  column="annualRent"/>
+<property name="pictures"  column="picture"/>
+<property name="localAuthority"  column="localAuthority"/>
+<property name="rentalType"  column="rentalType"/>
+<property name="frontDoorKeyCode"  column="frontDoorKeyCode"/>
+<property name="backDoorKeyCode"  column="backDoorKeyCode"/>
+<property name="porchDoorKeyCode"  column="porchDoorKeyCode"/>
+<property name="flatDoor"  column="flatDoor"/>
+<property name="others"  column="others"/>
+<property name="numberOfBedrooms"  column="numberOfBedrooms"/>
+<property name="tenancyAgreement"  column="tenancyAgreement"/>
+<property name="insuranceCertificate"  column="insuranceCertificate"/>
+<property name="floorPlan"  column="floorPlan"/>
+<property name="epcCertificate"  column="epcCertificate"/>
+<property name="gasCertificate"  column="gasCertificate"/>
+<property name="electricCertificate"  column="electricCertificate"/>
+<property name="hmoLicence"  column="hmoLicence"/>
+<property name="contractsAndWarranties"  column="contractsAndWarranties"/>
+<property name="landRegistry"  column="landRegistry"/>
+<property name="currentTenancyForm"  column="currentTenancyForm"/>
+<property name="propertyTimeline"  column="propertyTimeline"/>
+<property name="linkToJobs"  column="linkToJobs"/>
+<property name="lendingInformation"  column="lendingInformation"/>
+<property name="managementCompany"  column="managementcompany"/>
+<property name="companyName"  column="companyname"/>
+
+<property name="propertyTitle"  column="propertytitle"/>
+<property name="createdOn"  column="createdon"/>
+<property name="updatedOn"  column="updatedOn"/>
+<property name="updatedDetails"  column="updateddetails"/>
+<many-to-one name="createdBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="createdby"  />
+				</many-to-one>
+		<many-to-one name="updatedBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="updatedby"  />
+				</many-to-one>
+<property name="status"  column="status"/>
+
+ 
+	</class>
+</hibernate-mapping>

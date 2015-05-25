@@ -1,0 +1,85 @@
+<project name="SDP" basedir="." default="make">
+
+	<target name="_preinit">
+		<tstamp/>
+		<echo message="########## Start ${ant.project.name}"/>
+		<property name="ant.build.javac.target" value="1.7"/>
+		<property name="ant.build.javac.source" value="1.7"/>
+
+		<property name="build.dir" value="build"/>
+		<property name="dist.dir" value="dist"/>
+		<property name="src.dir" value="src"/>
+		<property name="hibmapping.dir" value="hibmapping"/>
+		<property name="resources.dir" value="resources"/>
+		<property name="webcontent.dir" value="WebContent"/>
+		<property name="webcontent.lib.dir" value="${webcontent.dir}/WEB-INF/lib"/>
+		<property name="compilelibs.dir" value="CompileLibs"/>
+
+		<property name="build.web.dir" value="${build.dir}/web"/>
+		<property name="build.web.lib.dir" value="${build.web.dir}/WEB-INF/lib"/>
+		<property name="build.web.classes.dir" value="${build.web.dir}/WEB-INF/classes"/>
+
+		<property name="project.jar" value="${dist.dir}/${ant.project.name}.war"/>
+
+		<path id="project.class.path">
+			<pathelement location="${build.web.classes.dir}"/>
+
+			<fileset dir="${compilelibs.dir}">
+				<include name="*.jar"/>
+			</fileset>
+
+			<fileset dir="${webcontent.lib.dir}">
+				<include name="*.jar"/>
+			</fileset>
+		</path>
+	</target>
+
+	<target name="clean" depends="_preinit" >
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+	</target>
+	
+	<target name="init" depends="_preinit">
+		<tstamp/>
+		<mkdir dir="${build.web.classes.dir}"/>
+		<mkdir dir="${dist.dir}"/>
+	</target>
+
+	<target name="compile" depends="_preinit,init" >
+		<javac destdir="${build.web.classes.dir}" includeantruntime="false" deprecation="no" debug="true" debuglevel="lines,vars,source">
+			<classpath>
+				<path>
+					<path refid="project.class.path"/>
+				</path>
+			</classpath>
+	  		<src path="${src.dir}"/>
+		</javac>
+
+	</target>
+
+	<target name="make" depends="compile" >
+		<copy todir="${build.web.dir}" flatten="false" preservelastmodified="true">
+			<fileset dir="${webcontent.dir}">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${build.web.classes.dir}" flatten="true" preservelastmodified="true">
+			<fileset dir="${hibmapping.dir}" />
+		</copy>
+		
+		<copy todir="${build.web.classes.dir}" flatten="true" preservelastmodified="true">
+			<fileset dir="${resources.dir}" />
+		</copy>
+	</target>
+
+	<target name="createWar" depends="make" >
+		<jar
+			destfile="${project.jar}"
+			basedir="${build.web.dir}"/>
+	</target>
+
+	<target name="build" depends="clean,createWar" >
+		<echo message="########## End ${ant.project.name}"/>
+	</target>
+</project>

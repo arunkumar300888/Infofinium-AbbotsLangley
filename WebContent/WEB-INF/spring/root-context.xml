@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<context:component-scan
+	base-package="uk.co.jmr.sdp,uk.co.jmr.webforms,com.ardhika.wfar" />
+
+	<bean id="loginFilterBean" name="loginFilterBean" class="uk.co.jmr.sdp.web.LoginFilter">
+	</bean>
+
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/abbottslangleyformsnew24032015?autoreconnect=true"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="zeroone"></property>
+</bean>
+
+<!-- 	<jee:jndi-lookup id="mailSession" jndi-name="mail/Session" /> -->
+
+<!-- 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl"> -->
+<!-- 		<property name="session" ref="mailSession"></property> -->
+<!-- 	</bean> -->
+
+<!-- 	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/infoFiniumDB" expected-type="javax.sql.DataSource" /> -->
+
+	<bean id="sessionFactory"
+		  class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="mappingResources">
+			<list>
+				<value>User.hbm.xml</value>
+				<value>Role.hbm.xml</value>
+				<value>Feature.hbm.xml</value>
+				<value>Discipline.hbm.xml</value>
+				<value>Doctype.hbm.xml</value>
+				<value>Document.hbm.xml</value>
+				<value>ReviewNote.hbm.xml</value>
+				<value>DocumentTrail.hbm.xml</value>
+				<value>WfAction.hbm.xml</value>
+				<value>WfModel.hbm.xml</value>
+				<value>WfNode.hbm.xml</value>
+				<value>WfCase.hbm.xml</value>
+				<value>WfAttribute.hbm.xml</value>
+				<value>WfStep.hbm.xml</value>
+				<value>Holiday.hbm.xml</value>
+				<value>Attribute.hbm.xml</value>
+				<value>AttributeValue.hbm.xml</value>
+				<value>DtTemplateCombo.hbm.xml</value>
+				<value>DtTemplateComboValue.hbm.xml</value>
+				<value>ModelCombo.hbm.xml</value>
+				<value>ModelComboValue.hbm.xml</value>
+				<value>DocumentAttribute.hbm.xml</value>
+				<value>DocumentReference.hbm.xml</value>
+				<value>DocumentUUID.hbm.xml</value>
+				<value>Group.hbm.xml</value>
+				<value>GroupRole.hbm.xml</value>
+				<value>SecurityGroup.hbm.xml</value>
+				<value>SecurityGroupCombo.hbm.xml</value>
+				<value>SecurityGroupUser.hbm.xml</value>
+				<value>UserSession.hbm.xml</value>
+				<value>CaseUserForms.hbm.xml</value>
+				<value>DocumentVersion.hbm.xml</value>
+				<value>SecurityGroupForm.hbm.xml</value>
+				<value>CompanyUser.hbm.xml</value>
+				<value>FormCompanyGroup.hbm.xml</value>
+				
+				
+				<!-- Forms -->
+				<value>PotentialTenantForm.hbm.xml</value>
+				<value>PropertyDetailsForm.hbm.xml</value>
+				<value>RoomDetails.hbm.xml</value>
+				<value>StandardProductForm.hbm.xml</value>
+				<value>TenancyForm.hbm.xml</value>
+				<value>TenantDetails.hbm.xml</value>
+				<value>CustomerDetails.hbm.xml</value>
+				<value>RetailerOrder.hbm.xml</value>
+				<value>ProductOrder.hbm.xml</value>
+				<value>BuilderDetailsForm.hbm.xml</value>
+				<value>UtilitiesCompanyDetailsForm.hbm.xml</value>
+				<value>PropertyRooms.hbm.xml</value>
+				<value>Inventory.hbm.xml</value>
+				<value>InventoryRooms.hbm.xml</value>
+				<value>UsefulInformationForTenants.hbm.xml</value>
+				<value>CheckingOutForm.hbm.xml</value>
+				<value>CheckingOutRooms.hbm.xml</value>
+				<!-- <value>InspectionInventory.hbm.xml</value> -->
+				<value>GivingNoticeForm.hbm.xml</value>
+				<value>TransactionDetails.hbm.xml</value>
+				<value>RentReceipt.hbm.xml</value>
+				
+				<!-- Forms support -->
+				<value>ArrayItems.hbm.xml</value>
+				<value>Arrays.hbm.xml</value>
+				<value>FieldTypes.hbm.xml</value>
+				<value>Fields.hbm.xml</value>
+				<value>FormData.hbm.xml</value>
+				<value>FormDefs.hbm.xml</value>
+				<value>FormFieldMap.hbm.xml</value>
+				<value>Forms.hbm.xml</value>
+				<value>HtmlFormDef.hbm.xml</value>
+				<value>UserForms.hbm.xml</value>
+				<value>KeepAlive.hbm.xml</value>
+				<value>FormTrail.hbm.xml</value>
+				<!-- <value>FormsModel.hbm.xml</value> -->
+				<value>JobDetailsForm.hbm.xml</value>
+				<value>AuditLogs.hbm.xml</value>
+				
+				<!-- TempDocuments added for document upload in forms -->
+				<value>TempDocuments.hbm.xml</value>
+				
+			</list>
+		</property>
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+            <property name="host" value="smtp.office365.com" />
+            <property name="port" value="587" />
+            <property name="username" 
+			value="formsportal@bentleywood.harrow.sch.uk" />
+            <property name="password" value="Bentley!123" />
+           
+            <property name="javaMailProperties">
+                <props>
+                 <prop key="mail.transport.protocol">smtp</prop>
+                    <prop key="mail.smtp.auth">true</prop>
+                    <prop key="mail.smtp.starttls.enable">true</prop>
+                    <prop key="mail.debug">true</prop>
+                    <prop key="mail.smtp.ssl.trust">smtp.office365.com</prop>
+                    <prop key="mail.smtp.socketFactory.port">587</prop>
+                   
+                </props>
+            </property>
+        </bean>
+
+
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- Transaction Manager -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+
+ <!-- Spring Quartz -->
+      <bean id="runMeTask" class="uk.co.jmr.sdp.trigger.TaskToBeExecuted" />
+ 
+	
+	<bean name="runMeJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+ 
+		<property name="jobClass" value="uk.co.jmr.sdp.trigger.RunTaskToBeExecuted" />
+ 
+		<property name="jobDataAsMap">
+		  <map>
+			<entry key="runMeTask" value-ref="runMeTask" />
+		  </map>
+		</property>
+ 
+	</bean>
+ 
+ 
+	<!-- Simple Trigger, run every 24 Hours  -->
+	<bean id="simpleTrigger" 
+                class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+ 
+		<property name="jobDetail" ref="runMeJob" />
+		<property name="repeatInterval" value="17000000" />
+		<property name="startDelay" value="1000" />
+ 
+	</bean>
+ 
+	<!-- Cron Trigger, run every 5 seconds-->
+	<bean id="cronTrigger" 
+                class="org.springframework.scheduling.quartz.CronTriggerBean">
+ 
+		<property name="jobDetail" ref="runMeJob" />
+		<property name="cronExpression" value="0/5 * * * * ?" />
+ 
+	</bean>
+ 
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="jobDetails">
+			<list>
+				<ref bean="runMeJob" />
+			</list>
+		</property>
+ 
+		<property name="triggers">
+			<list>
+				<ref bean="simpleTrigger" />
+			</list>
+		</property>
+	</bean>  
+
+</beans>

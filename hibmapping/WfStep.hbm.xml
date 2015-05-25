@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.ardhika.wfar">
+	<class name="WfStep" table="wf_step">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<property name="userCompleted" column="user_completed" />
+		<many-to-one name="owningCase" class="com.ardhika.wfar.WfCase"
+			column="case_id" lazy="false" />
+		<many-to-one name="node" class="com.ardhika.wfar.WfNode"
+			column="node_id" lazy="false"/>
+		<property name="status" />
+		<many-to-one name="actionApplied" class="com.ardhika.wfar.WfAction"
+			column="action_id" lazy="false" />
+		<property name="dateCreated" column="date_created" />
+		<property name="dateCompleted" column="date_completed" />
+		<property name="datePicked" column="date_picked"/>
+		<property name="assignee" column="assignee" />
+		<property name="assigneeBefore" column="assignee_before" />
+		<property name="readStatus" column="read_status"/>
+ 		<property name="actionReason" column="action_reason"/> 
+ 		<property name="emailId" column="email_id"/> 
+ 		<property name="inletsCameIn" column="inletsCameIn"/> 
+ 		<property name="statusLabel" column="status_label"></property>
+ 		
+	</class>
+
+</hibernate-mapping>

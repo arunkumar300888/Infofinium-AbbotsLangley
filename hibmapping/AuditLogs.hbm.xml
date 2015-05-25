@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="AuditLogs" table="audit_logs">
+		<id name="id" unsaved-value="-1"  >
+			<generator class="native"></generator>
+		</id>
+		<property name="formname" column="formname" />
+		<property name="action" column="action" />
+		<property name="time" column="time" />
+		<many-to-one name="userId" class="uk.co.jmr.sdp.domain.User" lazy="false">
+			<column name="user_id"  />
+		</many-to-one>
+		
+	</class>
+</hibernate-mapping>

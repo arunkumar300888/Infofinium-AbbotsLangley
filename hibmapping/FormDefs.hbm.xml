@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="uk.co.jmr.webforms.db.pojo.FormDefs" table="form_defs">
+		<id name="id" type="long" unsaved-value="-1">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<property name="name" type="string">
+			<column name="name" length="50" not-null="true" unique="true" />
+		</property>
+		<property name="description" type="string">
+			<column name="description" length="250" />
+		</property>
+		<property name="active" type="char">
+			<column name="active" length="1" not-null="true" />
+		</property>
+		<property name="handlerClass" type="string">
+			<column name="handler_class" length="500" />
+		</property>
+		<set name="formses" inverse="true" order-by="version asc" lazy="false" fetch="select" cascade="all">
+			<key>
+				<column name="form_def_id" unique="true" />
+			</key>
+			<one-to-many class="uk.co.jmr.webforms.db.pojo.Forms" />
+		</set>
+	</class>
+</hibernate-mapping>

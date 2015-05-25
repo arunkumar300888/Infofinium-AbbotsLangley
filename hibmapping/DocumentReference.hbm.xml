@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+
+	<class name="DocumentReference" table="document_reference">
+
+		<id name="id" column="id" type="long">
+			<generator class="increment"></generator>
+		</id>
+
+		<!-- <many-to-one name="document" class="uk.co.jmr.sdp.domain.Document" 
+			column="document_id"></many-to-one> -->
+
+		<property name="documentId" column="document_id" type="long"></property>
+
+
+		<many-to-one name="referenceDocument" class="uk.co.jmr.sdp.domain.Document"
+			column="reference_id" lazy="false"></many-to-one>
+
+		<!-- <property name="referenceId" column="reference_id" type="long"></property> -->
+
+	</class>
+
+
+</hibernate-mapping>

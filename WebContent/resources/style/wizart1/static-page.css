@@ -1,0 +1,120 @@
+.static-page h1
+{
+	font-size:25px !important;
+}
+.static-page h2
+{
+	font-size:17px !important;
+}
+
+.static-page h3, .static-page h4
+{
+	font-size:15px !important;
+	font-weight:bold;
+}
+
+.static-page p
+{
+	font-size:12px !important;
+}
+
+.static-page .scroll
+{
+	float:right;
+	margin:15px 0 0 15px;
+}
+
+.static-page section *, .static-page section a
+{
+    color: #333333;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.static-page .inner-box
+{
+	background-color: #FFFFFF;
+    border: 1px solid #000000;
+	font-family: 'Roboto';
+}
+
+.static-page .grid-box-header a, .static-page section a
+{
+	background-color:#C22900;
+	color:#fff;
+	text-decoration:none;
+	padding:3px 15px;
+}
+
+.static-page .grid-box-header a
+{
+	margin-left:100px;
+}
+
+.static-page .inner-box .grid-box-header ul li a
+{
+	float:left;
+	background-color: #000;
+    color: #FFFFFF;
+    height: 20px;
+    line-height: 19px;
+    padding: 1px 8px;
+    text-decoration: none;
+	margin-top:3px;
+}
+
+.static-page .inner-box .grid-box-header ul li a:hover
+{
+	background-color: #C22900;
+}
+
+.static-page .inner-box .scroll ol li
+{
+	color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px 20px;
+}
+
+.static-page .inner-box .scroll ol li a
+{
+	color:#000;
+	text-decoration:none;
+	font-size:15px;
+}
+
+.static-page .inner-box .scroll ol li:hover
+{
+	background-color:#000;
+	text-decoration:none;
+}
+
+.static-page .inner-box .scroll ol li:hover a{
+	color:#fff;
+}
+
+.static-page .scroll
+{
+	width:25%;
+	height:355px;
+	direction:rtl; 
+    overflow:auto; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

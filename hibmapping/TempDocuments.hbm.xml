@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="TempDocuments" table="temp_documents">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	<!-- 	<many-to-one name="discipline" class="uk.co.jmr.sdp.domain.Discipline"
+			column="discipline_id" lazy="false" not-null="true" /> -->
+		<property name="doctypeId" column="doctype_id" />
+		<property name="targetDate" column="target_date" />
+		<property name="filePath" column="file_path" />
+		<property name="ebNo" column="eb_number" />
+		<property name="author" column="author" />
+		<property name="name" column="document_name"/>
+		<property name="keywords" column="keywords"></property>
+		<property name="caseId" column="case_id"/>
+		<property name="locked" column="locked"></property>
+		<property name="createdDate" column="created_date" />
+        <property name="wip" column="wip"/>
+        <property name="revisionable" column="revisionable" type="boolean" />
+        <property name="abandon" column="abandon" type="boolean" />
+        <property name="reassignOwner" column="reassign_owner" type="string" />
+        <property name="deletionReason" column="deletion_reason" type="string" />
+        <property name="userFormId" column="user_form_id" type="string"/>
+        <property name="discriminator" column="discriminator" type="character"/>
+        <property name="securityGroupId" column="security_group_id" type="character"/>
+        <property name="attributeValue1" column="attribute_value1" />
+        <property name="attributeValue2" column="attribute_value2" />
+        <property name="attributeValue3" column="attribute_value3" />
+        <!-- <property name="attributeValue4" column="attribute_value4" />
+        <property name="attributeValue5" column="attribute_value5" /> -->
+                
+ 
+	</class>
+</hibernate-mapping>

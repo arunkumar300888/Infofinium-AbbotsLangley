@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ardhika.wfar">
+	<class name="WfNode" table="wf_model_nodes" abstract="true">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<property name="name" />
+		<property name="type" column="type" />
+		<property name="trayLabel" column="tray_label"/>
+		<set name="actions" table="wf_action" lazy="false" cascade="all">
+			<key>
+				<column name="node_id" not-null="true" />
+			</key>
+			<one-to-many class="com.ardhika.wfar.WfAction" />
+		</set>
+		<joined-subclass name="WfTask" table="wf_task">
+			<key column="node_id" />
+			<property name="assignee" column="assignee" />
+			<property name="excludeOwner" column="exclude_owner"></property>
+		</joined-subclass>
+		<joined-subclass name="WfDecision" table="wf_decision">
+			<key column="node_id" />
+			<many-to-one name="attribute" class="com.ardhika.wfar.WfAttribute"
+			column="attribute_id"  lazy="false"/>
+			<property name="operator" column="operator" />
+			
+			<property name="chkNumber" column="chknumber"/>
+		<property name="chkDecimal" column="chkdecimal"/>
+		<property name="chkDate" column="chkdate"/>
+		<property name="chkText" column="chktext"/>
+		</joined-subclass>
+		<!--added for Parallel flow  -->
+		<joined-subclass name="WfAssignment" table="wf_assignment">
+			<key column="node_id" />
+			<many-to-one name="attribute" class="com.ardhika.wfar.WfAttribute"
+			column="attribute_id"  lazy="false"/>
+			
+			<property name="attrNumber" column="wf_number"/>
+			<property name="attrDecimal" column="wf_decimal"/>
+			<property name="attrDate" column="wf_date"/>
+			<property name="attrText" column="wf_text"/>
+			<property name="assignee" column="assignee" />
+		</joined-subclass>
+		
+		<joined-subclass name="WfCancel" table="wf_cancel">
+				<key column="node_id" />
+				<property name="assignee" column="assignee" />
+		</joined-subclass>
+		<joined-subclass name="WfStop" table="wf_stop">
+				<key column="node_id" />
+				<property name="assignee" column="assignee" />
+		</joined-subclass>
+		<joined-subclass name="WfMail" table="wf_mail" lazy="false">
+				<key column="node_id" />
+				<property name="assignee" column="assignee" />
+				<property name="subject" column="subject" />
+				<property name="message" column="message" />
+			<set name="recipients" table="recipients" lazy="false">
+    			<key column="wfmail_id"/>
+    			<element column="recipient" type="string"/>
+			</set>		
+		</joined-subclass>
+		<joined-subclass name="WfFork" table="wf_fork">
+				<key column="node_id" />
+				<property name="assignee" column="assignee" />
+		</joined-subclass>
+		<joined-subclass name="WfJoin" table="wf_join">
+				<key column="node_id" />
+				<property name="assignee" column="assignee" />
+				
+			<many-to-one name="owningFork" class="com.ardhika.wfar.WfFork"
+			column="fork_id"  lazy="false" />	
+				
+		</joined-subclass>
+	</class>
+
+</hibernate-mapping>

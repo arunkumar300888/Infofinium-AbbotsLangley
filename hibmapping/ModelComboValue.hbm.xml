@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="uk.co.jmr.sdp.domain.dt">
+<class name="ModelComboValue" table="model_combo_value">
+	<id name="id" unsaved-value="-1">
+			<generator class="native" />
+	</id>
+	<many-to-one name="attribute" class="uk.co.jmr.sdp.domain.dt.Attribute" column="attr" lazy="false"/>
+	<many-to-one name="attributeValue" class="uk.co.jmr.sdp.domain.dt.AttributeValue" column="attr_value" lazy="false"/>
+	<many-to-one name="modelCombo" class="uk.co.jmr.sdp.domain.dt.ModelCombo" column="model_combo_id" lazy="false"/>
+	
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,381 @@
+
+<script type="text/javascript">
+//<![CDATA[
+	
+     $(function(){
+		$("#FORM_ButtonBar").hide();
+	});        
+           
+	var formTabs2 =
+	[
+		{vmask:[0],
+		rmask:[0],
+		fields:[ 													 
+			{name:"f_10_1",     id:"f_10_1",    type: 'S',  isRequired: true, ownedBy: null},
+			{name:"f_10_2",     id:"f_10_2",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_10_3",     id:"f_10_3",    type: '',  isRequired: true, ownedBy: null},
+			{name:"f_10_4",     id:"f_10_4",    type: '',  isRequired: true, ownedBy: null},
+			{name:"f_10_5",     id:"f_10_5",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_10_6",     id:"f_10_6",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_10_7",     id:"f_10_7",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_10_8",     id:"f_10_8",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_10_9",     id:"f_10_9",	  type: '',  isRequired: true,  ownedBy: null}, 
+			{name:"f_10_10",    id:"f_10_10",   type: '',  isRequired: true, ownedBy: null},			
+		    {name:"f_10_11",     id:"f_10_11",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_12",     id:"f_10_12",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_13",     id:"f_10_13",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_14",     id:"f_10_14",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_15",     id:"f_10_15",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_16",     id:"f_10_16",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_17",     id:"f_10_17",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_18",     id:"f_10_18",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_19",     id:"f_10_19",   type: 'S',  isRequired: false, ownedBy: null},
+		    {name:"f_10_20",     id:"f_10_20",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_21",     id:"f_10_21",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_22",     id:"f_10_22",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_23",     id:"f_10_23",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_24",     id:"f_10_24",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_25",     id:"f_10_25",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_26",     id:"f_10_26",   type: 'T',  isRequired: false, ownedBy: null},
+		    {name:"f_10_27",     id:"f_10_27",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_28",     id:"f_10_28",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_10_29",     id:"f_10_29",   type: 'T',  isRequired: false, ownedBy: null}]}
+				
+	];
+
+	  function _formValidationCheck()
+		{
+			var rv = true;
+			var fFrom = document.getElementById("f_10_6");
+			var from = fFrom.value;
+			from = trim(from);
+			if(from != null)
+			{
+				markFieldLabelValid(fFrom, rv)
+			}
+			
+			return rv;
+		}
+	
+	_form_init(formTabs2);
+	
+	
+	
+	
+
+//]]>
+</script>		
+
+
+<div id="FORM_Form" style="width: 650px;">
+	<div id="FRM003_tab_0" >
+		<!--Tab : FRM001_tab_0 -->
+		<div id="f_3" class="">
+		
+			<p align="center">
+				<b><font size="3" >Tenancy Form</font></b>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_1" title="Property Address">Property Address:</label>
+			<textarea class="text" cols="50" id="f_10_1" name="f_10_1" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+			<label class="FormFieldLabel" for="f_10_2" title="Request for">Type of Rental:</label>
+				<input checked="checked" id="f_10_2r0" name="f_10_2" type="radio" value="wholeHouse"/>
+				<label class="radio" for="f_10_2r0">Whole House</label>
+				<input id="f_1_1r1" name="f_10_2" type="radio" value="perRoom"/>				
+				<label class="radio" for="f_10_2r1">Per Room</label>
+				
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="Room Number">Room Number:</label>
+					<textarea class="text" cols="50" id="f_10_3" name="f_10_3" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p align="left">
+				<b><font size="3" >Tenant Details</font></b>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_" title="First Name">Title:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">First Name:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_4" title="Last Name">Last Name:</label>
+				<input class="text" id="f_10_4" name="f_10_4" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_5" title="Landline Number">Date Of Birth:</label>
+				<input class="text  datepicker" id="f_10_5" name="f_10_5" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_5" title="Landline Number">LandLine Number:</label>
+				<input class="text" id="f_10_5" name="f_10_5" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_6" title="Mobile Number">Mobile Number:</label>
+				<input class="text" id="f_10_6" name="f_10_6" type="text"/>
+			</p>
+			
+			
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Email Address:</label>
+				<input class="text" id="f_10_7" name="f_10_7" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">National Insurance Number:</label>
+				<input class="text" id="f_10_7" name="f_10_7" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_8" title="Address">Current Address:</label>				
+				<textarea class="text" cols="50" id="f_10_8" name="f_10_8" rows="6"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_9" title="Account Number">Passport:</label>
+				<input class="text" id="f_10_9" name="f_10_9" type="text" />
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_10_10" title="Account Holders Name">Driver's License:</label>
+				<input class="text" id="f_10_10" name="f_10_10" type="text" />
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_10_10" title="Account Holders Name">Credit Check:</label>
+				<input class="text" id="f_10_10" name="f_10_10" type="text" />
+			</p>
+			<p>
+				<label class="FormFieldLabel" for="f_10_10" title="Account Holders Name">Reference Check:</label>
+				<input class="text" id="f_10_10" name="f_10_10" type="text" />
+			</p>
+			
+			
+			<p>
+				<label class="FormFieldLabel" for="f_10_20" title="Property Description">Addition Remark:</label>
+				<textarea class="text" cols="50" id="f_10_20" name="f_10_20" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p align="left">
+				<b><font size="3" >Previous Landlord Details</font></b>
+			</p>
+			
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">First Name:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_4" title="Last Name">Last Name:</label>
+				<input class="text" id="f_10_4" name="f_10_4" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Address:</label>
+				<textarea class="text" cols="50" id="f_10_20" name="f_10_20" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Email Address:</label>
+				<input class="text" id="f_10_7" name="f_10_7" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_6" title="Contact Number">Contact Number:</label>
+				<input class="text" id="f_10_6" name="f_10_6" type="text"/>
+			</p>
+			
+			<p align="left">
+				<b><font size="3" >Employee Details</font></b>
+			</p>
+			
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">First Name:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_4" title="Last Name">Last Name:</label>
+				<input class="text" id="f_10_4" name="f_10_4" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Address:</label>
+				<textarea class="text" cols="50" id="f_10_20" name="f_10_20" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Email Address:</label>
+				<input class="text" id="f_10_7" name="f_10_7" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_6" title="Contact Number">Contact Number:</label>
+				<input class="text" id="f_10_6" name="f_10_6" type="text"/>
+			</p>
+			
+			
+			
+			
+			<p align="left">
+				<b><font size="3" >Guarantor Details</font></b>
+			</p>
+			
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">First Name:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_4" title="Last Name">Last Name:</label>
+				<input class="text" id="f_10_4" name="f_10_4" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Address:</label>
+				<textarea class="text" cols="50" id="f_10_20" name="f_10_20" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Email Address:</label>
+				<input class="text" id="f_10_7" name="f_10_7" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_6" title="Contact Number">Contact Number:</label>
+				<input class="text" id="f_10_6" name="f_10_6" type="text"/>
+			</p>
+			
+			
+			<p align="left">
+				<b><font size="3" >Next Of Kin</font></b>
+			</p>
+			
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">First Name:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_4" title="Last Name">Last Name:</label>
+				<input class="text" id="f_10_4" name="f_10_4" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Address:</label>
+				<textarea class="text" cols="50" id="f_10_20" name="f_10_20" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Email Address:</label>
+				<input class="text" id="f_10_7" name="f_10_7" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_6" title="Contact Number">Contact Number:</label>
+				<input class="text" id="f_10_6" name="f_10_6" type="text"/>
+			</p>
+			
+			
+			<p align="left">
+				<b><font size="3" >Tenancy Details</font></b>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Who Opened the Tenancy:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_5" title="Landline Number">Date Tenancy Started:</label>
+				<input class="text  datepicker" id="f_10_5" name="f_10_5" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Who Closed the Tenancy:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_5" title="Landline Number">Date Tenancy Closed:</label>
+				<input class="text  datepicker" id="f_10_5" name="f_10_5" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Checking Out Form:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p align="left">
+				<b><font size="3" >Link</font></b>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Link to Property:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Link to Tenancy Agreement:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Link to Rent Accounts:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Legal Notifications:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Tenancy Deposit Certificate:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Council Tax Registration:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Additional Links:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_7" title="Email Address">Correspondence with Tenant/s:</label>
+				<textarea class="text" cols="50" id="f_10_20" name="f_10_20" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_10_3" title="First Name">Correspondence Link:</label>
+				<input class="text" id="f_10_3" name="f_10_3" type="text" maxlength="50"/>
+			</p>
+			
+			
+		</div>
+	</div>
+</div>
+

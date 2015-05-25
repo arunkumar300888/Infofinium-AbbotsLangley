@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain.dt">
+<class name="AttributeValue" table="attribute_value">
+	<id name="id" unsaved-value="-1">
+			<generator class="native" />
+	</id>
+	<property name="value" column="value"/>
+	<many-to-one name="attr" column="doc_attr_id" class="uk.co.jmr.sdp.domain.dt.Attribute" lazy="false"/>
+	<property name="abbreviation" column="abbreviation" type="string"/>
+	<property name="isActive" column="isActive" type="character"></property>
+</class>
+</hibernate-mapping>

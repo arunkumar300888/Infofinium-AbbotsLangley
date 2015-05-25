@@ -1,0 +1,146 @@
+body
+{
+	background: url(img/bg.jpg) fixed;
+	margin: 0;
+	padding: 0;
+}
+body, a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: lighter;
+	color: #000000;
+}
+.main, .footer
+{
+	width: 990px;
+	margin: 0 auto;
+	padding: 0px 5px;
+}
+.main
+{
+	background-color: #FFFFFF;
+	min-height: 600px;
+}
+
+.footer
+{
+	height: 35px;
+	line-height: 35px;
+}
+.header
+{
+	/* background: url(img/logo_Dash_BWood.jpg) no-repeat right top; */
+	/* background: url(img/logo_ICSA.gif) no-repeat right top; */
+	/*  background: url(img/nhs_logo.jpg) no-repeat right center;  */
+	background: url(img/logo_ainscough.jpg) no-repeat right center;
+	height: 90px;
+	/* background: url(img/admin_logo_DSJV.jpg) no-repeat right top; */
+	/* background: url(img/logo_Admin_Bwood.jpg) no-repeat right top; */
+	 
+}
+.mid
+{
+	width: 12px;
+}
+.left
+{
+	width: 283px;
+}
+.leftlinks
+{
+	padding: 5px 7px;
+}
+.leftlinks a
+{
+	background: url(img/arrow-right.png) no-repeat left center;
+	display: block;
+	padding-left: 10px;
+	margin: 8px 0px;
+}
+.leftlinks a:hover
+{
+	text-decoration: none;
+}
+.box
+{
+	border: 1px solid #022459;
+	min-height: 200px;
+}
+.bg_title
+{
+	background:  #022459 url(img/flower.jpg) no-repeat right center;
+	font-family: arial;
+    font-size: 17px;
+    line-height: 28px;
+    padding-left: 8px;
+}
+ .footer, .bg_title, .butn, .popup_ad a
+{
+	color: #FFFFFF;
+}
+.bg_title, .label, .txt, .butn, .leftlinks a, .popup_ad a
+{
+	font-weight: bold;
+}
+ .footer, .butn, .popup_ad /*Dark Blue*/
+{
+	background-color: #022459;
+}
+.label, .txt
+{
+	color: #2c2c2c;
+	padding: 2px;
+	letter-spacing: 0.6px;
+}
+.txt
+{
+	border: 1px solid #9c9ea1;
+	box-shadow: 1px 1px 2px #e2e9f5;
+}
+.star
+{
+	color: #FF0000;
+}
+.butn
+{
+	padding: 0px 12px;
+	box-shadow: 2px 2px 4px #082e69;
+	border-style: none;
+}
+.pop_link
+{
+	margin-top: 60px;
+	cursor: pointer;
+}
+.popup_ad
+{
+	width: 180px;
+	position: absolute;
+	border: 1px solid #5789d7;
+	opacity: 0.9;
+	display: none;
+}
+.popup_ad a
+{
+	display: block;
+	font-size: 12pt;
+	text-decoration: none;
+	margin: 2;
+	padding: 8px;
+	height: 18px;
+	border-bottom: 1px solid #5789d7;
+}
+.popup_ad a:hover
+{
+	background-color: #15448d;
+}
+.butn_link
+{
+	height: 20px;
+	padding: 0px 10px;
+	color: #cd0b40;
+	border-style: none;
+	font-weight: bold;
+	border-radius: 2px;
+	cursor: pointer;
+}

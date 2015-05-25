@@ -1,0 +1,434 @@
+
+<script type="text/javascript">
+//<![CDATA[
+	
+     $(function(){
+		$("#FORM_ButtonBar").hide();
+	});        
+           
+	var formTabs2 =
+	[
+		{vmask:[0],
+		rmask:[0],
+		fields:[ 													 
+			{name:"f_6_1",     id:"f_6_1",    type: 'S',  isRequired: true, ownedBy: null},
+			{name:"f_6_2",     id:"f_6_2",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_6_3",     id:"f_6_3",    type: '',  isRequired: true, ownedBy: null},
+			{name:"f_6_4",     id:"f_6_4",    type: '',  isRequired: true, ownedBy: null},
+			{name:"f_6_5",     id:"f_6_5",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_6_6",     id:"f_6_6",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_6_7",     id:"f_6_7",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_6_8",     id:"f_6_8",	  type: '',  isRequired: true,  ownedBy: null},
+			{name:"f_6_9",     id:"f_6_9",	  type: '',  isRequired: true,  ownedBy: null}, 
+			{name:"f_6_10",    id:"f_6_10",   type: '',  isRequired: true, ownedBy: null},			
+		    {name:"f_6_11",     id:"f_6_11",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_12",     id:"f_6_12",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_13",     id:"f_6_13",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_14",     id:"f_6_14",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_15",     id:"f_6_15",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_16",     id:"f_6_16",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_17",     id:"f_6_17",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_18",     id:"f_6_18",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_19",     id:"f_6_19",   type: 'S',  isRequired: false, ownedBy: null},
+		    {name:"f_6_20",     id:"f_6_20",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_21",     id:"f_6_21",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_22",     id:"f_6_22",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_23",     id:"f_6_23",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_24",     id:"f_6_24",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_25",     id:"f_6_25",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_26",     id:"f_6_26",   type: 'T',  isRequired: false, ownedBy: null},
+		    {name:"f_6_27",     id:"f_6_27",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_28",     id:"f_6_28",   type: '',  isRequired: false, ownedBy: null},
+		    {name:"f_6_29",     id:"f_6_29",   type: 'T',  isRequired: false, ownedBy: null}]}
+				
+	];
+
+	  function _formValidationCheck()
+		{
+			var rv = true;
+			var fFrom = document.getElementById("f_6_6");
+			var from = fFrom.value;
+			from = trim(from);
+			if(from != null)
+			{
+				markFieldLabelValid(fFrom, rv)
+			}
+			
+			return rv;
+		}
+	
+	_form_init(formTabs2);
+	
+	
+	
+	
+
+//]]>
+</script>		
+
+
+<div id="FORM_Form" style="width: 650px;">
+	<div id="FRM003_tab_0" >
+		<!--Tab : FRM001_tab_0 -->
+		<div id="f_3" class="">
+			<p align="center">
+				<b><font size="3" >Property Details Form</font></b>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_1" title="Management Company">Management Company:</label>
+				<select class="text" id="f_6_2">
+				<option value="-1">Select</option> 
+				</select>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_2" title="Client">Client:</label>
+				<input class="text" id="f_6_2" name="f_6_2" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_3" title="First Name">First Name:</label>
+				<input class="text" id="f_6_3" name="f_6_3" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_4" title="Last Name">Last Name:</label>
+				<input class="text" id="f_6_4" name="f_6_4" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_5" title="Landline Number">Landline Number:</label>
+				<input class="text" id="f_6_5" name="f_6_5" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_6" title="Mobile Number">Mobile Number:</label>
+				<input class="text" id="f_6_6" name="f_6_6" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_7" title="Email Address">Email Address:</label>
+				<input class="text" id="f_6_7" name="f_6_7" type="text"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_8" title="Address">Address:</label>				
+				<textarea class="text" cols="50" id="f_6_8" name="f_6_8" rows="6"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_9" title="Account Number">Account Number:</label>
+				<input class="text" id="f_6_9" name="f_6_9" type="text" />
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_10" title="Account Holders Name">Account Holders Name:</label>
+				<input class="text" id="f_6_10" name="f_6_10" type="text" />
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_11" title="Sort Code">Sort Code:</label>
+				<input class="text" id="f_6_11" name="f_6_11" type="text" />
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_12" title="VAT Details">VAT Details:</label>
+				<input class="text" id="f_6_12" name="f_6_12" type="text" />
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_13" title="References for Payment">References for Payment:</label>
+				<textarea class="text" cols="50" id="f_6_8" name="f_6_8" rows="3"> </textarea>
+			</p>
+			
+			<p align="left"><u><b><font size="3" >Property Information</font></b></u></p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_14" title="Property Address Line 1">Property Address Line 1:</label>
+				<textarea class="text" cols="50" id="f_6_8" name="f_6_8" rows="3"> </textarea>
+			</p>	
+		
+			<p>
+				<label class="FormFieldLabel" for="f_6_15" title="Property Address Line 2">Property Address Line 2:</label>
+				<textarea class="text" cols="50" id="f_6_8" name="f_6_8" rows="3"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_16" title="Town">Town</label>
+				<input class="text" id="f_6_16" name="f_6_16" type="text" maxlength="100"/>				
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_17" title="City/County">City/County:</label>
+				<input class="text" id="f_6_17" name="f_6_17" type="text" maxlength="100"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_18" title="Property Postcode">Property Postcode:</label>
+				<input class="text" id="f_6_18" name="f_6_18" type="text" maxlength="10"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_19" title="Property Type">Property Type:</label>
+				<select class="text" id="f_6_19" name="f_6_19">
+				<option value="-1">Select</option>
+				<option value="Flat">Flat</option>
+				<option value="Flat">Studio</option>				
+				<option value="House">House</option> 				 
+				</select>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_20" title="Property Description">Property Description:</label>
+				<textarea class="text" cols="50" id="f_6_20" name="f_6_20" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_21" title="House Measurements">House Measurements:</label>
+				<textarea class="text" cols="50" id="f_6_21" name="f_6_21" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<!-- <p>
+				<label class="FormFieldLabel" for="f_6_22" title="Gas Meter Location">Gas Meter Location:</label>
+				<input class="text" id="f_6_22" name="f_6_22" type="text" maxlength="100"/>
+			</p> -->
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_23" title="Gas Meter Location">Gas Meter Location:</label>
+				<input class="text" id="f_6_23" name="f_6_23" type="text" maxlength="100"/>
+			</p>			
+			
+		   <p>
+				<label class="FormFieldLabel" for="f_6_24" title="Electric Meter Location">Electric Meter Location:</label>
+				<input class="text" id="f_6_24" name="f_6_24" type="text" maxlength="100"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_25" title="Water Meter Location">Water Meter Location</label>							
+				<input class="text" id="f_6_25" name="f_6_25" type="text" maxlength="100"/>
+			</p>
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_26" title="Date Of Purchase">Date Of Purchase:</label>
+				<input class="text  datepicker" id="f_6_26" name="f_6_26" maxlength="10" readonly="readonly" type="text" format="dd-mm-yyyy"/>
+			</p>				
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_27" title="Price Of Purchase">Price Of Purchase</label>							
+				<input class="text" id="f_6_27" name="f_6_27" type="text" maxlength="100"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_28" title="Estimated Value">Estimated Value</label>							
+				<input class="text" id="f_6_28" name="f_6_28" type="text" maxlength="100"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_29" title="As of Date">As of Date </label> 
+				<input class="text datepicker" id="f_6_29" name="f_6_29" maxlength="10" readonly="readonly" type="text" format="dd-mm-yyyy" />
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_30" title="Annual Rent">Annual Rent</label>							
+				<input class="text" id="f_6_30" name="f_6_38" type="text" maxlength="100"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_31" title="Picture">Picture:</label>
+				<input class="text searchtext" id="f_6_31" name="f_6_31" readonly="readonly" type="text" onclick="openUploadForm('f_6_7');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_31');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_31');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_32" title="Local Authority">Local Authority:</label>
+				<textarea class="text" cols="50" id="f_6_32" name="f_6_32" rows="3" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_33" title="Rental Type">Rental Type:</label>
+				<select class="text" id="f_6_33" name="f_6_33">
+				<option value="-1">Select</option>
+				<option value="Flat">Whole House</option>
+				<option value="Flat">Per bedroom</option>				
+				</select>
+			</p>
+			
+			<p align="left"><u><b><font size="3" >Rooms & key Codes</font></b></u></p>
+			
+			<p>
+			<label class="FormFieldLabel" for="f_6_34" title="Front Door Key Code">Front Door Key Code:</label>
+			<input class="text" id="f_6_34" name="f_6_34" type="text" />
+			</p>
+			<p>
+			<label class="FormFieldLabel" for="f_6_35" title="Front Door Key Code Document">Front Door Key Code Document:</label>
+			<input class="text searchtext" id="f_6_35" name="f_6_35" readonly="readonly" type="text" onclick="openUploadForm('f_6_35');"/>
+			<!-- <input class="download" type="button" value="Upload" onclick="openUploadForm('f_6_7');"/> -->
+			<input class="download" type="button" value="Open" onclick="openDoc('f_6_35');">
+			<input class="download" type="button" value="Remove" onclick="removeElement('f_6_35');">
+			</p>
+			
+			<p>
+			<label class="FormFieldLabel" for="f_6_36" title="Back Door Key Code">Back Door Key Code:</label>
+			<input class="text" id="f_6_36" name="f_6_36"  type="text" />
+			</p>
+			<p>
+			<label class="FormFieldLabel" for="f_6_37" title="Back Door Key Code Document">Back Door Key Code Document:</label>
+			<input class="text searchtext" id="f_6_37" name="f_6_37" readonly="readonly" type="text" onclick="openUploadForm('f_6_37');"/>
+			<!-- <input class="download" type="button" value="Upload" onclick="openUploadForm('f_6_7');"/> -->
+			<input class="download" type="button" value="Open" onclick="openDoc('f_6_37');">
+			<input class="download" type="button" value="Remove" onclick="removeElement('f_6_37');">
+			</p>
+			
+			<p>
+			<label class="FormFieldLabel" for="f_6_38" title="Porch Door Key Code">Porch Door Key Code:</label>
+			<input class="text" id="f_6_38" name="f_6_38" type="text" />
+			</p>
+			<p>
+			<label class="FormFieldLabel" for="f_6_39" title="Porch Door Key Code Document">Porch Door Key Code Document:</label>
+			<input class="text searchtext" id="f_6_39" name="f_6_39" readonly="readonly" type="text" onclick="openUploadForm('f_6_39');"/>
+			<!-- <input class="download" type="button" value="Upload" onclick="openUploadForm('f_6_7');"/> -->
+			<input class="download" type="button" value="Open" onclick="openDoc('f_6_39');">
+			<input class="download" type="button" value="Remove" onclick="removeElement('f_6_39');">
+			</p>
+			
+			<p>
+			<label class="FormFieldLabel" for="f_6_40" title="Flat Door">Flat Door:</label>
+			<input class="text" id="f_6_40" name="f_6_40"  type="text" />
+			</p>
+			<p>
+			<label class="FormFieldLabel" for="f_6_41" title="Flat Door Document">Flat Door Document:</label>
+			<input class="text searchtext" id="f_6_41" name="f_6_41" readonly="readonly" type="text" onclick="openUploadForm('f_6_41');"/>
+			<!-- <input class="download" type="button" value="Upload" onclick="openUploadForm('f_6_7');"/> -->
+			<input class="download" type="button" value="Open" onclick="openDoc('f_6_41');">
+			<input class="download" type="button" value="Remove" onclick="removeElement('f_6_41');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabel" for="f_6_42" title="others">others:</label>
+				<textarea class="text" cols="50" id="f_6_42" name="f_6_42" rows="3" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_43" title="Bedroom 1 Door">Bedroom 1 Door:</label>							
+				<input class="text" id="f_6_43" name="f_6_43" type="text" maxlength="100"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_44" title="Bedroom 1 Window">Bedroom 1 Window:</label>							
+				<input class="text" id="f_6_44" name="f_6_44" type="text" maxlength="100"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_45" title="Bedroom 1 Other">Bedroom 1 Other:</label>							
+				<input class="text" id="f_6_45" name="f_6_45" type="text" maxlength="100"/>
+			</p>
+			
+			<!-- <p>
+				<label class="FormFieldLabelRequired" for="f_6_46" title="Annual Rent">Annual Rent</label>							
+				<input class="text" id="f_6_46" name="f_6_46" type="text" maxlength="100"/>
+			</p> -->
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_46" title="Tenancy Agreement">Tenancy Agreement:</label>
+				<input class="text searchtext" id="f_6_46" name="f_6_46" readonly="readonly" type="text" onclick="openUploadForm('f_6_46');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_46');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_46');">
+			</p>
+			
+			
+			<p align="left"><u><b><font size="3" >Links</font></b></u></p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_47" title="Insurance Certificate">Insurance Certificate:</label>
+				<input class="text searchtext" id="f_6_47" name="f_6_47" readonly="readonly" type="text" onclick="openUploadForm('f_6_47');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_47');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_47');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_48" title="Floor Plan">Floor Plan:</label>
+				<input class="text searchtext" id="f_6_48" name="f_6_48" readonly="readonly" type="text" onclick="openUploadForm('f_6_48');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_48');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_48');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_49" title="EPC Certificate">EPC Certificate:</label>
+				<input class="text searchtext" id="f_6_49" name="f_6_49" readonly="readonly" type="text" onclick="openUploadForm('f_6_49');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_49');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_49');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_50" title="Gas Certificate">Gas Certificate:</label>
+				<input class="text searchtext" id="f_6_50" name="f_6_50" readonly="readonly" type="text" onclick="openUploadForm('f_6_50');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_50');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_50');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_51" title="Electric Certificate">Electric Certificate:</label>
+				<input class="text searchtext" id="f_6_51" name="f_6_51" readonly="readonly" type="text" onclick="openUploadForm('f_6_51');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_51');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_51');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_52" title="Tenancy Agreement">Tenancy Agreement:</label>
+				<input class="text searchtext" id="f_6_52" name="f_6_52" readonly="readonly" type="text" onclick="openUploadForm('f_6_52');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_52');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_52');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_53" title="HMO License">HMO License:</label>
+				<input class="text searchtext" id="f_6_53" name="f_6_53" readonly="readonly" type="text" onclick="openUploadForm('f_6_53');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_53');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_53');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_54" title="Contracts & Warranties">Contracts & Warranties:</label>
+				<input class="text searchtext" id="f_6_54" name="f_6_54" readonly="readonly" type="text" onclick="openUploadForm('f_6_54');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_54');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_54');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_55" title="Land Registry">Land Registry:</label>
+				<input class="text searchtext" id="f_6_55" name="f_6_55" readonly="readonly" type="text" onclick="openUploadForm('f_6_55');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_55');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_55');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_56" title="Current Tenancy Form">Current Tenancy Form:</label>
+				<input class="text searchtext" id="f_6_56" name="f_6_56" readonly="readonly" type="text" onclick="openUploadForm('f_6_56');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_56');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_56');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_57" title="Property Timeline">Property Timeline:</label>
+				<input class="text searchtext" id="f_6_7" name="f_6_57" readonly="readonly" type="text" onclick="openUploadForm('f_6_57');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_57');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_57');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_58" title="Link Of Jobs">Link to Jobs:</label>
+				<input class="text searchtext" id="f_6_58" name="f_6_58" readonly="readonly" type="text" onclick="openUploadForm('f_6_58');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_58');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_58');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_6_59" title="Lending Information">Lending Information:</label>
+				<input class="text searchtext" id="f_6_59" name="f_6_59" readonly="readonly" type="text" onclick="openUploadForm('f_6_59');"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_6_59');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_6_59');">
+			</p>
+			
+		</div>
+	</div>
+</div>
+

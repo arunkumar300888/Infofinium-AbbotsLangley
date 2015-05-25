@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="StandardProductForm" table="r_standard_product">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+		<property name="userFormId" column="user_form_id" />
+		<property name="productName" column="productname" />
+		<property name="productType" column="producttype" />
+		<property name="productCode" column="productcode" />
+		<property name="productDescription" column="productdescription"/>
+		<property name="sellingPricePerUnit" column="sellingpriceperunit"/>
+		<property name="picture1" column="picture1"/>
+		<property name="picture2" column="picture2"/>
+		<property name="picture3" column="picture3"/>
+		<property name="picture4" column="picture4"/>
+		<property name="picture5" column="picture5"/>
+		<property name="stockLevel" column="stocklevel"/>
+		<property name="agentDistributionOfStock" column="agentdistributionofstock" />
+        <property name="stockLevelNewSupplierOrderAlert" column="stocklevelnewsupplierorderalert"/>
+        
+ 
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="TenantDetails" table="tenant_details">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+<property name="tenancyId"  column="tenancy_id"/>
+<property name="title"  column="title"/>
+<property name="firstName"  column="firstname"/>
+<property name="lastName"  column="lastname"/>
+<property name="dateOfBirth"  column="dateofbirth"/>
+<property name="landlineNumber"  column="landlinenumber"/>
+<property name="mobileNumber"  column="mobilenumber"/>
+<property name="emailAddress"  column="emailaddress"/>
+<property name="nationalInsuranceNumber"  column="nationalinsurancenumber"/>
+<property name="currentAddress"  column="currentaddress"/>
+<property name="passport"  column="passport"/>
+<property name="driversLicense"  column="driverslicense"/>
+<property name="creditCheck"  column="creditcheck"/>
+<property name="referenceCheck"  column="referenceCheck"/>
+<property name="additionalRemarks"  column="additionalremarks"/>
+
+
+ 
+	</class>
+</hibernate-mapping>

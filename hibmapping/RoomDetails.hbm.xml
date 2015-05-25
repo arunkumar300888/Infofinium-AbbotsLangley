@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="RoomDetails" table="room_details">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+		
+		<many-to-one name="propertyDetailsForm" class="uk.co.jmr.sdp.domain.PropertyDetailsForm"
+			column="property_id" lazy="false"  />
+		<property name="roomNo" column="room_no" />
+		<property name="roomName" column="room_name" />
+		
+ 
+	</class>
+</hibernate-mapping>

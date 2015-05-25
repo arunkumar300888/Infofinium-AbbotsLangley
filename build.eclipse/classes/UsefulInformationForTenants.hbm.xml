@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="UsefulInformationForTenants" table="useful_information_for_tenants">
+
+		<id name="id" unsaved-value="-1"  >
+			<generator class="native"></generator>
+		</id>
+		<!-- <property name="userFormId" column="user_form_id" /> -->
+		<property name="instructions" column="instructions" />
+		<property name="companyContactDetails" column="company_contact_details" />
+		<property name="companyName" column="company_name" />
+		<property name="telephoneNumber" column="telephone_number" />
+		<property name="emailAddress" column="email_address" />
+		<property name="address" column="address" />
+		<property name="maintenanceQuery" column="maintenance_query" />
+		<property name="rentQuery" column="rent_query" />
+		
+	</class>
+</hibernate-mapping>

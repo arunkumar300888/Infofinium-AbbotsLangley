@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="uk.co.jmr.webforms.db.pojo.FormData" table="form_data">
+		<id name="id" type="long" unsaved-value="-1">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<many-to-one name="userForms" class="uk.co.jmr.webforms.db.pojo.UserForms" fetch="select">
+			<column name="user_form_id" not-null="true" />
+		</many-to-one>
+		<many-to-one name="htmlFormDef" class="uk.co.jmr.webforms.db.pojo.HtmlFormDef" fetch="select">
+			<column name="html_form_def_id" not-null="true" />
+		</many-to-one>
+		<property name="vindex" type="int">
+			<column name="v_index" not-null="true" />
+		</property>
+		<property name="textValue" type="string">
+			<column name="text_value" length="2000" />
+		</property>
+		<property name="dateValue" type="timestamp">
+			<column name="date_value" length="29" />
+		</property>
+		<property name="intValue" type="java.lang.Long">
+			<column name="int_value" />
+		</property>
+		<property name="numberValue" type="java.lang.Double">
+			<column name="number_value" precision="17" scale="17" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,129 @@
+
+<script type="text/javascript">
+//<![CDATA[
+	
+    /*  $(function(){
+		$("#FORM_ButtonBar").hide();
+	});   */      
+           
+	var formTabs2 =
+	[
+		{vmask:[0],
+		rmask:[0],
+		fields:[ 													 
+			{name:"f_13_1",     id:"f_13_1",    type: 'S',  isRequired: false, ownedBy: null},
+			{name:"f_13_2",     id:"f_13_2",	  type: 'S',  isRequired: false,  ownedBy: null},
+			{name:"f_13_3",     id:"f_13_3",    type: 'S',  isRequired: false, ownedBy: null},
+			{name:"f_13_4",     id:"f_13_4",    type: 'S',  isRequired: false, ownedBy: null},
+			{name:"f_13_5",     id:"f_13_5",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_13_6",     id:"f_13_6",	  type: '',  isRequired: false,  ownedBy: null},
+			{name:"f_13_7",     id:"f_13_7",	  type: 'S',  isRequired: false,  ownedBy: null},
+			{name:"f_13_8",     id:"f_13_8",	  type: 'S',  isRequired: false,  ownedBy: null},
+			{name:"f_13_9",     id:"f_13_9",	  type: 'S',  isRequired: false,  ownedBy: null}, 
+			{name:"f_13_10",    id:"f_13_10",   type: 'S',  isRequired: false, ownedBy: null}]}
+				
+	];
+
+	  /* function _formValidationCheck()
+		{
+			var rv = true;
+			var fFrom = document.getElementById("f_13_6");
+			var from = fFrom.value;
+			from = trim(from);
+			if(from != null)
+			{
+				markFieldLabelValid(fFrom, rv)
+			}
+			
+			return rv;
+		} */
+	
+	_form_init(formTabs2);
+	
+	
+	
+	
+
+//]]>
+</script>		
+
+
+<div id="FORM_Form" style="width: 650px;">
+	<div id="FRM003_tab_0" >
+		<!--Tab : FRM001_tab_0 -->
+		<div id="f_3" class="">
+		
+			<p align="left">
+				<b><font size="3" >Inventory Form</font></b>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_1" title="Tenant Name">Tenant Name:</label>
+				<input class="text" id="f_13_1" name="f_13_1" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_2" title="Employee Name">Employee Name:</label>
+				<input class="text" id="f_13_2" name="f_13_2" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_3" title="Address">Address:</label>				
+				<textarea class="text" cols="50" id="f_13_3" name="f_13_3" rows="6"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_4" title="Room">Room:</label>
+				<input class="text" id="f_13_4" name="f_13_4" type="text" maxlength="50"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_5" title="List Of Furnishing">List Of Furnishing:</label>
+				<select class="m_select_text" id="f_13_5" name="f_13_5" size="8" multiple="multiple">
+					<option/>
+				</select>
+				<img height="22px" alt="add" src="resources/images/file_add.png" class="actionIcon" onclick="frmLbAddItem('f_13_5');" />
+				<img height="22px" alt="delete" src="resources/images/file_delete.png" class="actionIcon" onclick="frmLbDeleteItem('f_13_5');" />
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_6" title="First Name">Everything Ok?</label>
+				<input checked="checked" id="f_13_6" name="f_13_6" onchange="frmCbChanged(this);" type="checkbox" value="Required"/>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_7" title="First Name">Notes/Details:</label>
+				<textarea class="text" cols="50" id="f_13_7" name="f_13_7" rows="6" maxlength="500"> </textarea>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_8" title="First Name">Photos:</label>
+				<input class="text searchtext" id="f_13_8" readonly="readonly" name="f_13_8" type="text" maxlength="50"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_13_8');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_13_8');">
+			</p>
+			
+			<p align="left">
+				<b><font size="3" >Links</font></b>
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_9" title="Property Form">Property Form:</label>
+				<input class="text searchtext" readonly="readonly" id="f_13_9" name="f_13_9" type="text" maxlength="50"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_13_9');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_13_9');">
+			</p>
+			
+			<p>
+				<label class="FormFieldLabelRequired" for="f_13_10" title="Tenancy Form">Tenancy Form:</label>
+				<input class="text searchtext" readonly="readonly" id="f_13_10" name="f_13_10" type="text" maxlength="50"/>
+				<input class="download" type="button" value="Open" onclick="openDoc('f_13_10');">
+				<input class="download" type="button" value="Remove" onclick="removeElement('f_13_10');">
+			</p>
+			
+			
+			
+		</div>
+	</div>
+</div>
+

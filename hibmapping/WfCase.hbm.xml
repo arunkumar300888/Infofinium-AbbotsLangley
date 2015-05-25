@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        <hibernate-mapping package="com.ardhika.wfar">
+	<class name="WfCase" table="wf_case">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<many-to-one name="model" class="com.ardhika.wfar.WfModel"
+			column="model_id"  lazy="false"/>
+		<property name="dateCreated" column="date_created"/>
+		<property name="dateCompleted" column="date_completed"/>
+		<property name="status"/>
+		<property name="creator" column="creator"/>
+		<property name="creatorGroup" column="creator_group"/>
+		<set name="attributes" lazy="false" cascade="all" table="wf_case_attr">
+			<key>
+				<column name="case_id" not-null="true" />
+			</key>
+			<many-to-many class="com.ardhika.wfar.WfAttribute" column="attribute_id" unique="true" />
+		</set>
+		<set name="steps" lazy="false" order-by="id desc" cascade="all" table="wf_step">
+			<key>
+				<column name="case_id" not-null="true"></column>
+			</key>
+			<one-to-many class="com.ardhika.wfar.WfStep"/>
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain.dt">
+<class name="Attribute" table="attribute">
+	<id name="id" unsaved-value="-1">
+			<generator class="native" />
+	</id>
+	<property name="name" column="attr_name"/>
+	<property name="order" column="attr_order"/>
+	<set name="attrValues" lazy="false" cascade="all" table="attribute_value">
+		<key>
+			<column name="doc_attr_id" not-null="true" />
+		</key>
+		<one-to-many class="uk.co.jmr.sdp.domain.dt.AttributeValue" />
+	</set>
+</class>
+</hibernate-mapping>

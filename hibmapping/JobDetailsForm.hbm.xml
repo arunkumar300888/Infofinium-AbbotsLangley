@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="JobDetailsForm" table="new_job_form">
+
+		<id name="id" unsaved-value="-1"  >
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="dateRaised" column="date_raised" />
+		<property name="jobNumber" column="job_number" />
+		<property name="descriptionOfJob" column="description_of_job" />
+		<property name="photoOfIssue" column="photo_of_issue" />
+		<property name="isUrgency" column="is_urgency" />
+		<property name="appoinmentDate" column="appoinment_date" />
+		<property name="appoinmentTimeRange" column="appoinment_time_range" />
+		<property name="photoOfFixes" column="photo_of_fixes" />
+		
+	
+		<property name="linkToInvoiceForJob" column="link_to_invoice_for_job" />
+		<property name="linkToCompanyContactInfo" column="link_to_company_contact_info" />
+		
+		
+		<many-to-one name="linkOfPropertyForm" class="uk.co.jmr.sdp.domain.PropertyDetailsForm" lazy="false">
+			<column name="link_of_property_form"  />
+		</many-to-one>
+		
+		<many-to-one name="linkOfTenantForm" class="uk.co.jmr.sdp.domain.TenancyForm" lazy="false">
+			<column name="link_of_tenant_form"  />
+		</many-to-one>
+		
+		<many-to-one name="builder" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="builder"  />
+				</many-to-one>
+		
+		
+		
+		<property name="jobTitle"  column="jobtitle"/>
+<property name="createdOn"  column="createdon"/>
+<property name="updatedOn"  column="updatedOn"/>
+<property name="updatedDetails"  column="updateddetails"/>
+<many-to-one name="createdBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="createdby"  />
+				</many-to-one>
+		<many-to-one name="updatedBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="updatedby"  />
+				</many-to-one>
+<property name="status"  column="status"/>
+	</class>
+</hibernate-mapping>

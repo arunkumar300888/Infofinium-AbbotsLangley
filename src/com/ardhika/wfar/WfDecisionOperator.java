@@ -1,0 +1,9 @@
+package com.ardhika.wfar;
+
+public enum WfDecisionOperator {
+	WF_DECISION_OP_LT, WF_DECISION_OP_LE, WF_DECISION_OP_GT, WF_DECISION_OP_GE,
+
+	WF_DECISION_OP_EQ, WF_DECISION_OP_NE,
+
+	WF_DECISION_OP_BE, WF_DECISION_OP_AF
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="PropertyRooms" table="propertyrooms">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+
+<many-to-one name="propertyDetailsForm" class="uk.co.jmr.sdp.domain.PropertyDetailsForm" lazy="false">
+			<column name="property_id"  />
+		</many-to-one>
+<property name="roomName"  column="roomname"/>
+<property name="isOccupied"  column="isoccupied"/>
+
+<many-to-one name="occupiedBy" class="uk.co.jmr.sdp.domain.TenancyForm" lazy="false">
+			<column name="occupiedby"  />
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="CustomerDetails" table="r_customer_details">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+		<property name="userFormId" column="user_form_id" />
+		<property name="title" column="title" />
+		<property name="firstName" column="firstname" />
+		<property name="lastName" column="lastname" />
+		<property name="contactNumber" column="contactnumber" />
+		<property name="mobileNumber" column="mobilenumber"/>
+		<property name="emailAddress" column="emailaddress"></property>
+		<property name="billingAddress" column="billingAddress"/>
+		<property name="shippingAddress" column="shippingaddress"></property>
+		<property name="personalHandDelivered" column="personalhanddelivered" />
+        <property name="paymentDetails" column="paymentdetails"/>
+        <property name="preferredMethodOfPayment" column="preferredmethodofpayment" />
+        <property name="notes" column="notes"  />
+        <property name="mailingList" column="mailingList"  />
+        <property name="orderHistory" column="orderHistory" />
+       <property name="appointmentHistory" column="appointmentHistory" />
+ 
+	</class>
+</hibernate-mapping>

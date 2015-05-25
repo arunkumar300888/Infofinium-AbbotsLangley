@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="CheckingOutForm" table="checkingout">
+		<id name="id" unsaved-value="-1">
+		<generator class="native" />
+		</id>
+		
+		<many-to-one name="propertyDetailsForm" class="uk.co.jmr.sdp.domain.PropertyDetailsForm"
+			column="property_id" lazy="false"  />
+		
+	<many-to-one name="tenancy" class="uk.co.jmr.sdp.domain.TenancyForm"
+			column="tenancy_id" lazy="false"  />
+		
+		<property name="checkingOutTitle" column="checkingouttitle" />
+		<property name="tenantName" column="tenantname" />
+		<property name="landlordName" column="landlordname" />
+		<property name="rentedPropertyAddress" column="rentedpropertyaddress" />
+		<property name="checkOutAppointmentTime" column="checkoutappointmenttime" />
+		<property name="nameOfEmployees" column="nameofemployee" />
+		<property name="agentCompletingCheckOut" column="agentcompletingcheckOut" />
+		<property name="damage" column="damage" />
+		<property name="notes" column="notes" />
+		<property name="frontDoor" column="frontdoor" />
+		<property name="backDoor" column="backdoor" />
+		<!-- <property name="roomNumbers" column="room_numbers" /> -->
+		<property name="tenantSignature" column="tenantsignature" />
+		
+		<property name="createdOn"  column="createdon"/>
+		<property name="updatedOn"  column="updatedOn"/>
+		<property name="updatedDetails"  column="updateddetails"/>
+		<many-to-one name="createdBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="createdby"  />
+				</many-to-one>
+		<many-to-one name="updatedBy" class="uk.co.jmr.sdp.domain.User" lazy="false">
+					<column name="updatedby"  />
+				</many-to-one>
+		<property name="status"  column="status"/>
+		
+		</class>
+		</hibernate-mapping>

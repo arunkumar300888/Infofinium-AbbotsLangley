@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="uk.co.jmr.sdp.domain">
+	<class name="User" table="user">
+		<id name="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<property name="userName" column="user_name" />
+		<property name="password" column="password" />
+		<property name="emailId" column="email_id" />
+		<property name="mobileNo" column="mobile_no" />
+		<property name="isActive" column="isActive" type="character"/>
+		<property name="holidayFromDate" column="holiday_Date_from" />
+		<property name="holidayToDate" column="holiday_Date_to" />
+		<set name="roles" table="user_role" lazy="false" cascade="all">
+			<key column="user_id" />
+			<many-to-many column="role_id" class="Role" fetch="join" />
+		</set>
+		<set name="groupRoles" table="user_grouprole" lazy="false" fetch="select"
+			cascade="all">
+			<key>
+				<column name="user_id" />
+			</key>
+			<many-to-many column="grouprole_id" class="uk.co.jmr.sdp.domain.GroupRole"
+				fetch="join" />
+		</set>
+		<set name="secGroups" table="security_group_user" lazy="false" fetch="select" cascade="all">
+		<key>
+				<column name="user_id" />
+			</key>
+				<many-to-many column="security_group_id" class="uk.co.jmr.sdp.domain.SecurityGroup"
+				fetch="join" />
+		</set>
+	</class>
+</hibernate-mapping>
